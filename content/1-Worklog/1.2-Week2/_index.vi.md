@@ -22,12 +22,44 @@ pre: " <b> 1.2. </b> "
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu VPC là gì cùng với các dịch vụ của nó
-  * Subnet
-  * Route Table
-  * Elastic IP 
-  * Nat Gateway
-  * ...
+* Đã tìm, học và hiểu về VPC 
+  * Mục đích chính của việc sử dụng VPC là thường dùng để phân tách môi trường.
+
+* Hiểu thêm về subnet
+  * Public subnet, private subnet
+  * VPC cho phép tạo ra nhiều mạng ảo và chia các mạng ảo thành mạng con (được gọi là subnet)
+  * Biết được về 5 địa chỉ IP trong mỗi subnet
+
+* Đã tìm hiểu qua về bảng định tuyến (route table):
+  * Hiểu được bảng định tuyến là gì
+  * Hiểu được về Default Route Table, và Custom Route Table
+  * Hiểu được cơ bản là cần phải thiết lập Custom Route Table để cho các máy chủ có thể kết nối với Internet bên ngoài
+
+* Hiểu về Elastic Network Interface (ENI):
+  * Hiểu được cơ bản về ENI: khi tạo hoặc bật máy chủ trong VPC, mỗi máy chủ được cấp 1 địa chỉ tài nguyên không được gắn trực tiếp vào tài nguyên máy chủ, mà được gắn vào các card mạng Elastic Network Interface.
+  * ENI là 1 card mạng ảo có thể chuyển sang các EC2 Instance khác
+
+* Hiểu về Elastic IP Address (EIP):
+  * Hiểu được cơ bản về EIP: là 1 địa chỉ IPv4 tĩnh
+  * Và khi không được sử dụng EIP sẽ charge phí -> cần chú ý khi làm việc có liên quan đến EIP để tránh trường hợp trừ tiền oan
+
+* Hiểu về VPC Endpoint:
+  * Hiểu được các khái niệm cơ bản về chúng
+  * Hiểu về 2 loại Endpoint:
+    * Interface Endpoint
+    * Gateway Endpoint
+
+* Hiểu về Internet Gateway và NAT Gateway
+  * Hiểu được các khái niệm cơ bản của Internet Gateway: giúp cho các máy chủ có thể kết nối ra ngoài Internet
+  * Hiểu được NAT Gateway là gì
+  * Điểm khác biệt giữa NAT Gateway và Internet Gateway là:
+    * NAT Gateway chỉ nhận kết nối chiều ra và không nhận kết nối chiều vào
+    * Khi tạo bảng định tuyến (custom route table) thì 
+      * Internet Gateway: Destination - Target của nó là địa chỉ <public ID của Public Subnet> - <địa chỉ Internet> (id của Internet Gateway)
+      * NAT Gateway: Destination của NAT Gateway được đặt trong public subnet nối với ID 0.0.0.0/0, nhưng Target của NAT Gateway là igw-id -> NAT Gateway thường dùng để cho các máy chủ trong môi trường Private Subnet kết nối ra được bên ngoài Internet.
+
+* Hiểu về Security Hub và Network Access Control List (NACL)
+  * 
 
 * Đã đọc và tìm hiểu thêm về các dịch vụ VPC để biết cách sử dụng và quản lí chúng trong các dự án thực tế
 
