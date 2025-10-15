@@ -55,11 +55,36 @@ pre: " <b> 1.2. </b> "
   * Điểm khác biệt giữa NAT Gateway và Internet Gateway là:
     * NAT Gateway chỉ nhận kết nối chiều ra và không nhận kết nối chiều vào
     * Khi tạo bảng định tuyến (custom route table) thì 
-      * Internet Gateway: Destination - Target của nó là địa chỉ <public ID của Public Subnet> - <địa chỉ Internet> (id của Internet Gateway)
-      * NAT Gateway: Destination của NAT Gateway được đặt trong public subnet nối với ID 0.0.0.0/0, nhưng Target của NAT Gateway là igw-id -> NAT Gateway thường dùng để cho các máy chủ trong môi trường Private Subnet kết nối ra được bên ngoài Internet.
+      * **Internet Gateway**: Destination - Target của nó là địa chỉ <public ID của Public Subnet> - <địa chỉ Internet> (id của Internet Gateway)
+      * **NAT Gateway**: Destination của NAT Gateway được đặt trong public subnet nối với ID 0.0.0.0/0, nhưng Target của NAT Gateway là igw-id -> NAT Gateway thường dùng để cho các máy chủ trong môi trường Private Subnet kết nối ra được bên ngoài Internet.
 
 * Hiểu về Security Hub và Network Access Control List (NACL)
-  * 
+  * SG là một tường lửa **có lưu trữ trạng thái (stateful)**, chỉ cho phép rule và được áp dụng lên các Elastic Network Interface. Cấu hình được mặc định **chặn mọi truy cập đến và đi**
+  * NACL là một tường lửa **không lưu trữ trạng thái (stateless)**, được áp dụng trên các VPC Subnets. Cấu hình được mặc định **cho phép mọi truy cập đến và đi**
 
-* Đã đọc và tìm hiểu thêm về các dịch vụ VPC để biết cách sử dụng và quản lí chúng trong các dự án thực tế
+* Hiểu cơ bản về VPC Flow Logs
+  * Là tính năng cho phép nắm bắt thông tin lưu lượng IP đi đến từ các giao diện mạng VPC
+  * Không capture nội dung gói tin
+
+* Hiểu được về VPC Peering và Transit Gateway
+  * Hiểu được VPC Peering là gì: là tính năng giúp **kết nối 2 hay nhiều VPC** để các tài nguyên có thể liên lạc trực tiếp -> tăng tính bảo mật
+  * Hiểu được Transit Gateway: dùng để kết nối các VPC và mạng on-premises thông qua **1 hub trung gian**
+
+* Hiểu được về VPN và Direct Connect
+  * Hiểu về khái niệm VPN Site to Site: thích hợp tỏng mô hình hybrid, cần thiết lập kết nối 2 đầu:
+    * Virtual Private Gateway
+    * Customer Gateway
+  * Hiểu được về Direct Connect: là dịch vụ cho phép tạo kết nối từ trung tâm dữ liệu lên AWS, có thể thay đổi băng thông tùy theo nhu cầu
+
+* Hiểu được về Elastic Load Balancing
+  * Là 1 dịch vụ cân bằng tải được quản lí bởi AWS
+  * Sử dụng giao thức HTTP, HTTPS, TCP, và SSL (TCP bảo mật)
+  * Có tên DNS riêng
+  * ELB Có tính năng health check:
+    * Application Load Balancer
+    * Network Load Balancer
+    * Clasic Load Balancer
+    * Gatewat Load Balancer
+  * Có tính năng Sticky Session
+
 

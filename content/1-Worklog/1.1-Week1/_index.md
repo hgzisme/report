@@ -23,25 +23,45 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Achievements:
 
-*   Got to know the FCJ members and team members, expanding connections to go to the cloud together.
+*   Familiarized myself with the members of FCJ and the team, expanding my network to start our cloud journey together.
 
-*   Understood what AWS is and grasped the basic service groups:
+*   Understood the fundamentals of AWS and learned about its core service categories:
     *   Compute
     *   Storage
     *   Networking
     *   Database
     *   ...
 
-*   Finished the learning sections of Module 01:
-    *   Understood the basics of AWS and my own upcoming cloud journey.
-    *   Grasped the fundamentals of AWS infrastructure.
-    *   Learned about AWS management tools and AWS cost optimization.
+*   Completed all sections of Module 01:
+    *   Listened to and learned about the definition of cloud computing.
+    *   Understood the benefits of cloud computing, such as cost optimization, accelerated development, resource elasticity, and the ability to scale globally.
+    *   Gained a basic understanding of AWS and the cloud journey ahead.
+    *   Gained knowledge of the AWS Global Infrastructure, including:
+        *   Data Centers
+        *   Availability Zones (AZs)
+        *   Regions (a region comprises a minimum of 3 AZs)
+        *   Edge Locations
+            *   CloudFront
+            *   WAF (Web Application Firewall)
+            *   Route 53
+    *   Explored AWS management tools:
+        *   AWS Console - Root Login
+        *   AWS Management Console - IAM Login
+        *   Management Console - Service Search
+        *   Management Console - Support Center
+        *   AWS Command Line Interface (CLI)
+        *   AWS SDKs (Software Development Kits)
+    *   Learned about cost optimization methods when using AWS services:
+        *   Leveraging discounted pricing models:
+            *   Reserved Instances
+            *   Savings Plans
+            *   Spot Instances
     *   Practiced creating an AWS account.
-    *   Learned more from additional studies on the AWS Well-Architected Framework.
+    *   Conducted supplementary research on the AWS Well-Architected Framework.
 
-*   Successfully created and configured an AWS Free Tier account.
-    *   Set up MFA for the root account.
-    *   Familiarized myself with creating an Admin Group and Admin User.
-    *   Supported authentication for the Admin User account.
-        *   Created Access Key
-        *   Created/Deleted Secret Key
+*   Successfully created and configured an AWS Free Tier account:
+    *   Set up MFA (Multi-Factor Authentication) for the root account.
+    *   Familiarized myself with creating an Admin Group and an Admin User.
+    *   Configured authentication for the Admin User by:
+        *   Generating an Access Key.
+        *   Managing the Secret Key (creation/deletion).

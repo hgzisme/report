@@ -20,9 +20,6 @@ pre: " <b> 1.3. </b> "
 | 6   | - Bắt tay vào làm bài lab10                                                                                                                                                                                                                                                                                       | 26/09/2025   | 26/09/2025      | https://000010.awsstudygroup.com/                                                                                                                                                                                              |
 
 ### Kết quả đạt được tuần 3:
-Chắc chắn rồi! Dựa vào bảng kế hoạch và định dạng kết quả của tuần 1, đây là kết quả đạt được của tuần 3:
-
-### Kết quả đạt được tuần 3:
 
 * Hoàn thành Lab 3, nắm vững kiến thức nền tảng về mạng (Networking) trên AWS:
   *   Thực hành tạo và cấu hình một Virtual Private Cloud (VPC) hoàn chỉnh.
