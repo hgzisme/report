@@ -32,21 +32,21 @@ Nền tảng FocusLearn là một hệ thống e-learning tiên tiến được 
 
 ### 3. Kiến Trúc Giải Pháp
 
-![NỀN TẢNG CHO CÁC KHÓA HỌC TRỰC TUYẾN](/images/2-Proposal/AWSOjtArchitecture.png)
+![NỀN TẢNG CHO CÁC KHÓA HỌC TRỰC TUYẾN](/images/2-Proposal/architecture.png)
 
 ### Các Dịch Vụ AWS Được Sử Dụng
-|        Loại hình       |                  Dịch vụ AWS                 |                          Chức năng                         |
-|:----------------------:|:--------------------------------------------:|:----------------------------------------------------------:|
-| Lưu trữ Frontend      | AWS Amplify hoặc S3 + CloudFront               | Lưu trữ và phân phối trang web tĩnh (frontend Next.js)      |
-| Tính toán Backend       | AWS Lambda                                   | Chạy logic API và các chức năng quản lý khóa học serverless |
-| Quản lý API           | Amazon API Gateway                           | Xử lý các yêu cầu HTTP giữa frontend và backend          |
-| Cơ sở dữ liệu          | Amazon DynamoDB (NoSQL) hoặc Aurora Serverless | Lưu trữ hồ sơ người dùng, dữ liệu khóa học và giao dịch     |
-| Xác thực người dùng     | Amazon Cognito                               | Quản lý đăng ký, đăng nhập và token của người dùng         |
-| Email/Thông báo       | Amazon SES / SNS                             | Gửi email xác minh, đặt lại mật khẩu và cảnh báo khóa học   |
-| Lưu trữ               | Amazon S3                                    | Lưu trữ video, hình ảnh, tài liệu khóa học                 |
-| Phân phối nội dung     | Amazon CloudFront                            | Tăng tốc độ phân phối nội dung trên toàn cầu                |
-| Giám sát & Bảo mật     | CloudWatch, IAM, AWS Shield (Standard)       | Logs, chỉ số, quyền truy cập và bảo vệ chống DDoS          |
-| Tên miền & Định tuyến   | Route 53                                     | Quản lý tên miền tùy chỉnh và chứng chỉ SSL                |
+|       Loại hình       |                  Dịch vụ AWS                   |                          Chức năng                          |
+| :-------------------: | :--------------------------------------------: | :---------------------------------------------------------: |
+|   Lưu trữ Frontend    |        AWS Amplify hoặc S3 + CloudFront        |   Lưu trữ và phân phối trang web tĩnh (frontend Next.js)    |
+|   Tính toán Backend   |                   AWS Lambda                   | Chạy logic API và các chức năng quản lý khóa học serverless |
+|      Quản lý API      |               Amazon API Gateway               |       Xử lý các yêu cầu HTTP giữa frontend và backend       |
+|     Cơ sở dữ liệu     | Amazon DynamoDB (NoSQL) hoặc Aurora Serverless |   Lưu trữ hồ sơ người dùng, dữ liệu khóa học và giao dịch   |
+|  Xác thực người dùng  |                 Amazon Cognito                 |     Quản lý đăng ký, đăng nhập và token của người dùng      |
+|    Email/Thông báo    |                Amazon SES / SNS                |  Gửi email xác minh, đặt lại mật khẩu và cảnh báo khóa học  |
+|        Lưu trữ        |                   Amazon S3                    |         Lưu trữ video, hình ảnh, tài liệu khóa học          |
+|  Phân phối nội dung   |               Amazon CloudFront                |        Tăng tốc độ phân phối nội dung trên toàn cầu         |
+|  Giám sát & Bảo mật   |     CloudWatch, IAM, AWS Shield (Standard)     |      Logs, chỉ số, quyền truy cập và bảo vệ chống DDoS      |
+| Tên miền & Định tuyến |                    Route 53                    |         Quản lý tên miền tùy chỉnh và chứng chỉ SSL         |
 
 ### Thiết Kế Thành Phần
 #### 1. Frontend:
@@ -72,15 +72,15 @@ Nền tảng FocusLearn là một hệ thống e-learning tiên tiến được 
 ### 4. Lộ Trình Kỹ Thuật
 **Các Giai Đoạn Triển Khai**
 
-| Giai đoạn                  |                    Chi tiết Triển khai                   |
-|----------------------------|:----------------------------------------------------------:|
-| Thiết lập Hạ tầng          | Cấu hình Amplify, S3, và CloudFront để triển khai.         |
-| Triển khai Backend         | Triển khai Lambda + API Gateway cho các API khóa học.      |
-| Cấu hình Cơ sở dữ liệu     | Tạo các bảng DynamoDB cho người dùng, khóa học, và giao dịch mua. |
-| Tích hợp Xác thực người dùng | Thiết lập Cognito cho user pool và liên kết danh tính.       |
-| Thiết lập Thông báo        | Tích hợp SES để xác minh email và cập nhật khóa học.       |
-| Giám sát                   | Cấu hình các dashboard và cảnh báo trên CloudWatch.        |
-| Kiểm thử                  | Thực hiện kiểm thử chức năng và tải cho 10.000 yêu cầu/ngày. |
+| Giai đoạn                    |                        Chi tiết Triển khai                        |
+| ---------------------------- | :---------------------------------------------------------------: |
+| Thiết lập Hạ tầng            |        Cấu hình Amplify, S3, và CloudFront để triển khai.         |
+| Triển khai Backend           |       Triển khai Lambda + API Gateway cho các API khóa học.       |
+| Cấu hình Cơ sở dữ liệu       | Tạo các bảng DynamoDB cho người dùng, khóa học, và giao dịch mua. |
+| Tích hợp Xác thực người dùng |      Thiết lập Cognito cho user pool và liên kết danh tính.       |
+| Thiết lập Thông báo          |       Tích hợp SES để xác minh email và cập nhật khóa học.        |
+| Giám sát                     |        Cấu hình các dashboard và cảnh báo trên CloudWatch.        |
+| Kiểm thử                     |   Thực hiện kiểm thử chức năng và tải cho 10.000 yêu cầu/ngày.    |
 
 ### 5. Tiến Độ và Các Mốc Quan Trọng
 **Tiến Độ Dự Án**
@@ -98,14 +98,14 @@ Hoặc bạn có thể tải xuống [Tệp Ước Tính Ngân Sách](../attachm
 
 ### Chi Phí Hạ Tầng
 
-| Dịch vụ                      |         Chi phí ($)        | Mô tả                  |
-|------------------------------|:----------------:|------------------------|
-| Amplify / S3 + CloudFront    |         5        | Lưu trữ + CDN          |
-| API Gateway + Lambda         |        10        | Yêu cầu API & tính toán |
-| DynamoDB / Aurora Serverless |        15        | CSDL khóa học & người dùng |
-| Cognito + SES                |         2        | Xác thực + email       |
-| Giám sát / IAM / Route 53  |         5        | Chỉ số, DNS, vai trò    |
-| **Trung bình**               | **≈ $37 / Tháng**  | **Lưu lượng thấp**      |
+| Dịch vụ                      |     Chi phí ($)      | Mô tả                        |
+| ---------------------------- | :------------------: | ---------------------------- |
+| Amplify / S3 + CloudFront    |          5           | Lưu trữ + CDN                |
+| API Gateway + Lambda         |          10          | Yêu cầu API & tính toán      |
+| DynamoDB / Aurora Serverless |          15          | CSDL khóa học & người dùng   |
+| Cognito + SES                |          2           | Xác thực + email             |
+| Giám sát / IAM / Route 53    |          5           | Chỉ số, DNS, vai trò         |
+| **Trung bình**               |  **≈ $37 / Tháng**   | **Lưu lượng thấp**           |
 |                              | **≈ $80–90 / Tháng** | **Lưu lượng trung bình/cao** |
 
 
