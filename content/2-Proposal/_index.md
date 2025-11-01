@@ -32,7 +32,7 @@ The FocusLearn Platform is an advanced e-learning system designed to provide a s
 
 ### 3. Solution Architecture
 
-![A PLATFORM FOR ONLINE COURSES](/images/2-Proposal/architecture.png)
+![A PLATFORM FOR ONLINE COURSES](/images/2-Proposal/new_architecture.png)
 
 ### AWS Services Used
 |        Category       |                  AWS Service                 |                          Function                          |

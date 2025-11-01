@@ -32,7 +32,7 @@ Nền tảng FocusLearn là một hệ thống e-learning tiên tiến được 
 
 ### 3. Kiến Trúc Giải Pháp
 
-![NỀN TẢNG CHO CÁC KHÓA HỌC TRỰC TUYẾN](/images/2-Proposal/architecture.png)
+![NỀN TẢNG CHO CÁC KHÓA HỌC TRỰC TUYẾN](/images/2-Proposal/new_architecture.png)
 
 ### Các Dịch Vụ AWS Được Sử Dụng
 |       Loại hình       |                  Dịch vụ AWS                   |                          Chức năng                          |
