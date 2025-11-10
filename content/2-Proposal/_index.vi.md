@@ -188,3 +188,7 @@ Phần này cung cấp một ước tính chi phí hàng tháng chi tiết dựa
 *   Hỗ trợ một lượng lớn lượt xem tài liệu và yêu cầu API hàng ngày.
 *   Sẵn sàng cho các tính năng dựa trên AI trong tương lai như tóm tắt tài liệu hoặc đề xuất nội dung cá nhân hóa.
 *   Một hệ thống mạnh mẽ để liên kết các ghi chú và công việc với các trang hoặc phần cụ thể trong tài liệu, tạo ra một công cụ học tập mạnh mẽ.
+
+
+
+
