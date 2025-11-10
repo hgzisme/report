@@ -7,42 +7,59 @@ pre: " <b> 1.3. </b> "
 ---
 
 ### Mục tiêu tuần 3:
-
-* Hoàn thành Module 3 và làm các bài lab của Module 2
+* Tiếp tục học tập và tìm hiểu thêm về các dịch vụ của AWS
+* Tìm hiểu về dịch vụ EC2
+* Làm bài lab03
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                                                                                                                                         | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo                                                                                                                                                                                                                |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 2   | - Làm các bài Lab3:<br>&emsp;+ Tạo VPC<br>&emsp;+ Tạo Route Table<br>&emsp;+ Tạo Security Group<br>&emsp;+ Tạo Subnet<br>&emsp;+ Biết về Network Access Control List<br>&emsp;+ Tạo EC2 Intances<br>&emsp;+ Kiểm tra kết nối<br>&emsp;+ Tạo NAT Gateway<br>&emsp;+ Tạo Endpoint kết nối với NAT Gateway<br>&emsp; | 22/09/225    | 22/09/2025      | [Lab03](https://000003.awsstudygroup.com/)                                                                                                                                                                                     |
-| 3   | - Học Module 3<br>&emsp;+ 03-01<br>&emsp;+ 03-02                                                                                                                                                                                                                                                                  | 23/09/2025   | 23/09/2025      | [Module 03-01](https://www.youtube.com/watch?v=-t5h4N6vfBs&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=72) đến  [Module 03-02](https://www.youtube.com/watch?v=hFVYG8WqfU0&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=80) |
-| 4   | - Tìm hiểu thêm về EC2 cùng với các <br>&emsp;dịch vụ khác như:<br>&emsp;+ EC2 Auto Scaling<br>&emsp;+ EFS/FSX<br>&emsp;+ Lightsail<br>&emsp;+ Application Migration Service                                                                                                                                      | 24/09/2025   | 24/09/2025      |                                                                                                                                                                                                                                |
-| 5   | - Bắt tay vào làm bài Lab13<br>&emsp;+ Tạo backup plan<br>&emsp;+ Thử restore thông tin<br>&emsp;+ Dọn dẹp tài nguyên                                                                                                                                                                                             | 25/09/2025   | 25/09/2025      | [Lab13](https://000013.awsstudygroup.com/)                                                                                                                                                                                    |
-| 6   | - Bắt tay vào làm bài lab10                                                                                                                                                                                                                                                                                       | 26/09/2025   | 26/09/2025      | https://000010.awsstudygroup.com/                                                                                                                                                                                              |
+| 2   | - Làm các bài Lab03:<br>&emsp;+ Tạo VPC<br>&emsp;+ Tạo Route Table<br>&emsp;+ Tạo Security Group<br>&emsp;+ Tạo Subnet<br>&emsp;+ Biết về Network Access Control List<br>&emsp;+ Tạo EC2 Intances<br>&emsp;+ Kiểm tra kết nối<br>&emsp;+ Tạo NAT Gateway<br>&emsp;+ Tạo Endpoint kết nối với NAT Gateway<br>&emsp; | 22/09/225    | 22/09/2025      | [Lab03](https://000003.awsstudygroup.com/)                                                                                                                                                                                     |
+| 3   | - Học Module 03-01-01: Instance type                                                                                                                                                                                                                                                                 | 23/09/2025   | 23/09/2025      | [Module 03-01-01](https://www.youtube.com/watch?v=e7XeKdOVq40&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=73)   |
+| 4   | - Học Module 03-01-02: AMI / Backup / Key Pair                                                                                                                                      | 24/09/2025   | 24/09/2025      |    [Module 03-01-02](https://www.youtube.com/watch?v=yAR6QRT3N1k&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=74)                                                                                                                                                                                                                            |
+|5   |               - Học Module 03-01-03: Elastic book store                                                                                                                                                                             | 25/09/2025   | 25/09/2025      | [Module 03-01-03](https://www.youtube.com/watch?v=hKr_TfGP7NY&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=75)                                                                                                                                                                                    |
+| 6   | - Học Module 03-01-04: Instance Store                                                                                                                                                                                                                                                                                      | 26/09/2025   | 26/09/2025      | [Module 03-01-04](https://www.youtube.com/watch?v=6IHNDJ85aoQ&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=76)                                                                                                                                                                                              |
 
 ### Kết quả đạt được tuần 3:
+*   Đã làm và hoàn thành lab03, những gì đã đạt được:
+    *   Biết cách tạo VPC, subnet
+    *   Cấu hình Route table, Security Group, biết về NACL
+    *   Tạo được EC2 Instance và kiểm tra kết nối
+        *   Sử dụng MobaXterm
+    *   Tạo NAT Gateway và Endpoint kết nối
+        *   Đồng thời cũng kiểm tra kết nối Endpoint
 
-* Hoàn thành Lab 3, nắm vững kiến thức nền tảng về mạng (Networking) trên AWS:
-  *   Thực hành tạo và cấu hình một Virtual Private Cloud (VPC) hoàn chỉnh.
-  *   Thiết lập Subnet (public & private), Route Table và Security Group để kiểm soát luồng truy cập.
-  *   Hiểu rõ vai trò của Network Access Control List (NACL).
-  *   Khởi chạy các EC2 Instance trong các Subnet khác nhau và kiểm tra kết nối giữa chúng.
-  *   Cấu hình thành công NAT Gateway để cho phép các tài nguyên trong Subnet private có thể truy cập Internet.
+ *  Module 03-01-01: Instance Type
+    *   Hiểu được Instance type là gì 
+    *   Hiểu được các yếu tố của EC2 Instance
+    *   Hardware Node
+        *   Có tính năng Placement Option
+        *   Hypervisor
+        *   PV: Paravirtulization
+        *   HVM: Hardware Virtual Machine
+        *   KVM: Nitro
+        *   AZ 
+  
+*   Module 03-01-02: AMI / Backup / Key
+    *   Hiểu được AMI(Amazon Machine Image) là gì
+    *   Hiểu được các để backup các EC2 Instance thông qua việc tạo Snapshot
+    *   Biết được Keypair là gì và công dụng của nó
 
-* Hoàn thành các nội dung học tập của Module 3:
-  *   Đã học xong các phần 03-01 và 03-02, củng cố kiến thức lý thuyết.
+*   Module 03-01-03: Elastic book store
+    *   Hiểu được EBS là gì
+    *   Hiểu được các EBS và EC2 được kết nối với nhau
+    *   Biết được EBS có 2 loại đĩa: HDD và SSD
+    *   Đã tìm hiểu qua về lí do khiến EBS có thể đạt đến high avaiability 99.999%
+    *   Được biết về Optimised EBS Instances
+    *   Tính năng EBS Multi attach: EBS có thể được gán vào các EC2 chạy trên Hypervisor Nitro
+    *   Back up EBS bằng cách snapshot vào S3 
 
-* Mở rộng kiến thức về dịch vụ Compute (EC2) và các dịch vụ liên quan:
-  *   Tìm hiểu về khả năng tự động co giãn của EC2 Auto Scaling.
-  *   Nắm được khái niệm và trường hợp sử dụng của các dịch vụ lưu trữ file chia sẻ như EFS và FSx.
-  *   Biết đến Amazon Lightsail như một giải pháp máy chủ ảo đơn giản.
-  *   Tìm hiểu về dịch vụ Application Migration Service để hỗ trợ di chuyển ứng dụng lên AWS.
-
-* Thực hành về sao lưu và phục hồi dữ liệu với Lab 13:
-  *   Tạo thành công một kế hoạch sao lưu (backup plan) cho tài nguyên.
-  *   Thực hiện quá trình khôi phục (restore) thông tin từ bản sao lưu.
-  *   Nắm được quy trình dọn dẹp tài nguyên sau khi thực hành.
-
-* Hoàn thành Lab 10
-  * Về bài lab số 10 thì thực sự em vẫn chưa nắm được rõ, nên em dự định sẽ tiếp tục làm lại vài lần ạ
-
-
+*   Module 03-01-04: Instance Store
+    *   Hiểu được Instance Store là gì
+    *   Hiểu được sự khác nhau giữa EBS và Instance Store
+    *   Hiểu được sự liên hệ giữa Instance store và EC2
+    *   Trường hợp sử dụng của Instance store: dùng khi cần hiệu năng cực cao lên đến hàng triệu IOPS: 
+        *   Swap
+        *   Paging
+        *   Buffer / Cache
+        *   Log
