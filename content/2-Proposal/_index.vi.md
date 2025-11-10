@@ -76,7 +76,7 @@ Tiến độ 3 tháng ban đầu vẫn thực tế để phát triển một S�
 2.  **Tháng 2:** Thiết kế và điều chỉnh kiến trúc. Phát triển logic backend cho việc tải lên, mua và truy cập tài liệu an toàn.
 3.  **Tháng 3:** Triển khai giao diện người dùng React với trình xem tài liệu và các tính năng ghi chú. Thử nghiệm và ra mắt.
 
-# 6. Ước tính Ngân sách
+### 6. Ước tính Ngân sách
 
 Phần này cung cấp một ước tính chi phí hàng tháng chi tiết dựa trên các kịch bản lưu lượng truy cập thấp, trung bình và cao. Mô hình serverless đảm bảo bạn chỉ trả tiền cho những gì bạn sử dụng, làm cho nó cực kỳ hiệu quả về chi phí cho một dự án giáo dục nhỏ.
 

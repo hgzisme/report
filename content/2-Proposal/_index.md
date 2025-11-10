@@ -76,7 +76,7 @@ The original 3-month timeline is still realistic for developing a Minimum Viable
 2.  **Month 2:** Design and adjust architecture. Develop backend logic for document uploads, purchases, and secure access.
 3.  **Month 3:** Implement the React front-end with the document viewer and note-taking features. Test and launch.
 
-# 6. Budget Estimation
+### 6. Budget Estimation
 
 This section provides a detailed monthly cost estimation based on low, medium, and high traffic scenarios. The serverless model ensures you only pay for what you use, making it extremely cost-effective for a small educational project.
 
