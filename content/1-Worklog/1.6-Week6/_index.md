@@ -5,53 +5,81 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 6 Goals:
 
-### Week 6 Objectives:
+*   Continue studying Module 04
+*   Study Module 05
+*   Prepare for lab exercises
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Tasks for this week:
+| Day | Task                                                                                                                                                                                           | Start Date   | End Date        | Resources                                |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ---------------------------------------- |
+| Mon | - Study Module 04 - 04: Snow Family - Storage Gateway - Backup                                                                                                                                 | 10/13/2025   | 10/13/2025      | [Module 04 - 04](https://www.youtube.com/watch?v=YXn8Q_Hpsu4&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=106) |
+| Tue | - Study Module 05 - 01: Shared Responsibility Model <br> - Study Module 05 - 02: Amazon Identity and Access Management                                                                            | 10/14/2025   | 10/14/2025      | [Module 05 - 01](https://www.youtube.com/watch?v=tsobAlSg19g&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=150) <br> [Module 05 - 02](https://www.youtube.com/watch?v=N_vlJGAqZxo&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=151)  |
+| Wed | - Study Module 05 - 03: Amazon Cognito <br> - Study Module 05 - 04: AWS Organizations                                                                                                          | 10/15/2025   | 10/15/2025      | [Module 05 - 03](https://www.youtube.com/watch?v=pZ2fgEFK3Vs&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=152) <br> [Module 05 - 04](https://www.youtube.com/watch?v=5oQY8Rogz9Y&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=153) |
+| Thu | - Revise blog translation and submit the missing translated article <br>- Study Module 05 - 05: AWS Identity Center (SSO) <br> - Study Module 05 - 06: Amazon Key Management Service            | 10/16/2025   | 10/16/2025      | [Module 05 - 05](https://www.youtube.com/watch?v=NW1xrMkNMjU&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=154) <br> [Module 05 - 06](https://www.youtube.com/watch?v=GMihNQojhZc&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=155)  |
+| Fri | - Study Module 05 - 07: AWS Security Hub <br> - Study Module 05 - 08: Hands-on and Additional research                                                                                      | 10/17/2025   | 10/17/2025      | [Module 05 - 07](https://www.youtube.com/watch?v=clj2E0rNBEs&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=156) <br> [Module 05 - 08](https://www.youtube.com/watch?v=0SdpD2GPYz4&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=157) |
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Week 6 Outcomes:
+*   Module 04 - 04: Snow Family - Storage Gateway - Backup
+    *   Learned about the Snow Family:
+        *   Snowball
+        *   Snowball Edge
+        *   Snowmobile
+    *   Learned about Storage Gateway: a hybrid storage solution that combines storage in a traditional on-premises environment with the AWS cloud environment.
+        *   File Gateway: Stores and retrieves objects in S3 using Network File Sharing (NFS) and Server Message Block (SMB).
+        *   Volume Gateway: Uses the iSCSI protocol to store block data in S3, accessed via EBS snapshots (automated by AWS Backup), which can then be used to create EBS Volumes.
+        *   Tape Gateway: Provides backup applications with an iSCSI virtual tape library (VTL) interface. Virtual tape data is stored in Amazon S3 or Amazon Glacier.
+    *   Studied Storage Gateway.
+    *   Learned about Disaster Recovery:
+        *   Recovery Time Objective (RTO): The shortest time to restore a service.
+        *   Recovery Point Objective (RPO): The maximum acceptable period of data loss.
+    *   Learned about 4 recovery strategies:
+        *   Backup and Restore
+        *   Pilot Light (Active - Standby)
+        *   Low-capacity Active - Active
+        *   Full-capacity Active - Active
+    *   Learned about AWS Backup:
+        *   It is a managed backup service.
+        *   Can be configured and scheduled (backup schedule).
+        *   Has backup policies (backup retention).
+        *   Monitors backup activities for AWS resources such as EBS, EC2, Amazon RDS, Amazon DynamoDB, Amazon EFS, and AWS Storage Gateway Volumes.
 
+*   Module 05 - 01: Shared Responsibility Model
+    *   Learned about the Shared Responsibility Model.
+    *   Security responsibilities vary depending on the service type:
+        *   Infrastructure-level services => Customer's responsibility.
+        *   Managed services with shared control => Shared responsibility between the customer and AWS.
+        *   Services fully managed by AWS => AWS's responsibility.
 
-### Week 6 Achievements:
+*   Module 05 - 02: Amazon Identity and Access Management
+    *   Gained a deeper understanding of the IAM service, understanding the concepts of IAM User, Group, Role, and Policy (Identity-based policy and Resource-based policy).
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+*   Module 05 - 03: Amazon Cognito
+    *   Understood the purpose of Cognito: helps with user authentication, authorization, and management.
+    *   Understood the two main components of Cognito:
+        *   User Pools: User directories that provide sign-up and sign-in options.
+        *   Identity Pools: Provide users with access to other AWS services.
+        *   User Pools and Identity Pools can be combined to provide direct access to AWS services.
 
-* Successfully created and configured an AWS Free Tier account.
+*   Module 05 - 04: AWS Organizations
+    *   Learned about AWS Organizations.
+        *   Understood Organizational Units (OUs) (can create new AWS accounts, allocate resources, and organize AWS accounts), and Consolidated Billing.
+        *   Service Control Policies (SCPs):
+            *   Can be applied to OUs and AWS Accounts.
+            *   SCPs only set the maximum permissions for IAM Users or IAM Roles within the assigned OU or AWS Account.
+            *   Allow for the setup of deny-based policies.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+*   Module 05 - 05: AWS Identity Center (SSO)
+    *   Learned about AWS Identity Center.
+    *   Learned the concept of a Permission Set: the level of access that Users and Groups have to the AWS accounts within an AWS Organization.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+*   Module 05 - 06: Amazon Key Management Service
+    *   Learned about the KMS data encryption service.
+        *   Customer Managed Key (CMK).
+        *   Data Key: A type of key used outside of AWS KMS to encrypt data.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+*   Module 05 - 07: AWS Security Hub
+    *   Learned about Security Hub and its features.
+    *   Security Hub runs continuously, checking service configurations and performing security checks based on AWS best practices.

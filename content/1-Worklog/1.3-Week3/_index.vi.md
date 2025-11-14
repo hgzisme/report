@@ -28,6 +28,7 @@ pre: " <b> 1.3. </b> "
         *   Sử dụng MobaXterm
     *   Tạo NAT Gateway và Endpoint kết nối
         *   Đồng thời cũng kiểm tra kết nối Endpoint
+        *   Lưu ý: Khi muốn connect endpoint thì phải sửa lại inbound SG của EC2 Private sang ssh từ SG của Endpoint thì mới kết nối được
 
  *  Module 03-01-01: Instance Type
     *   Hiểu được Instance type là gì 
@@ -45,7 +46,7 @@ pre: " <b> 1.3. </b> "
     *   Hiểu được các để backup các EC2 Instance thông qua việc tạo Snapshot
     *   Biết được Keypair là gì và công dụng của nó
 
-*   Module 03-01-03: Elastic book store
+*   Module 03-01-03: Elastic block store
     *   Hiểu được EBS là gì
     *   Hiểu được các EBS và EC2 được kết nối với nhau
     *   Biết được EBS có 2 loại đĩa: HDD và SSD

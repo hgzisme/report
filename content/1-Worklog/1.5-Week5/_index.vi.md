@@ -8,39 +8,64 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu tuần 5:
 
-* Làm các bài lab còn dở dang của Module 03 và Module 03
-* Hoàn thành deadline nộp 3 bài dịch
-* Học Module 4
+* Học Module 04
+* Làm lab10
+* Dịch blog nộp bài
 
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo                                                                                                                                                                                                               |
 | --- | --------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2   | - Làm bài lab19 và lab20                                                                | 06/09/2025   | 06/09/2025      | [Lab19](https://000019.awsstudygroup.com/) & [Lab20](https://000020.awsstudygroup.com/)<br>                                                                                                                                   |
-| 3   | - Làm bài lab24<br>+ Tạo S3 bucket<br>+ Tạo EC2 cho Storage Gateway<br>+ Tạo File Share | 07/09/2025   | 07/09/2025      | [Lab24](https://000024.awsstudygroup.com/)                                                                                                                                                                                    |
-| 4   | - Làm bài lab25                                                                         | 08/09/2025   | 08/09/2025      | [Lab25](https://000025.awsstudygroup.com/)                                                                                                                                                                                    |
-| 5   | - Em làm bài dịch Blog                                                                  | 09/09/2025   | 09/09/2025      |                                                                                                                                                                                                                               |
-| 6   | - Nộp bài dịch Blog<br>- Học Module 4<br>+ 04-01<br>+ 04-02                             | 10/09/2025   | 10/09/2025      | [Module 04-01](https://www.youtube.com/watch?v=hsCfP0IxoaM&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=103) & [Module 04-02](https://www.youtube.com/watch?v=_yunukwcAwc&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=104) |
+| 2   | - Học Module 04-01: Dịch vụ lưu trữ đám mây <br>- Học Module 04-02: Amazon Simple Storage Service ( S3 ) - Access Point - Storage Class                                                               | 06/10/2025   | 06/10/2025      | [Module 04 - 01](https://www.youtube.com/watch?v=hsCfP0IxoaM&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=103) & [Module 04 - 02](https://www.youtube.com/watch?v=_yunukwcAwc&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=104)<br>                                                                                                                                   |
+| 3   | - Học Module 04 - 03: S3 Static Website & CORS - Control Access - Object Key & Performance - Glacier | 07/10/2025   | 07/10/2025      | [Module 04 - 03](https://www.youtube.com/watch?v=mPBjB6Ltl_Q&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=105)                                                                                                                                                                                    |
+| 4   | - Làm lab10                                                                        | 08/10/2025   | 08/10/2025      | [Lab10](https://000010.awsstudygroup.com/)                                                                                                                                                                                    |
+| 5   | - Dịch blog AWS                                                                  | 09/10/2025   | 09/10/2025      |                                                                                                                                                                                                                               |
+| 6   | - Tiếp tục dịch blog và nộp bài dịch blog                           | 10/10/2025   | 10/10/2025      |  |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Củng cố và nâng cao kỹ năng thực hành qua các bài Lab về lưu trữ và quản lý dữ liệu: 
-  *   Hoàn thành Lab 24, nắm vững cách triển khai giải pháp lưu trữ hybrid cloud với AWS Storage Gateway:
-    *   Thực hành tạo EC2 instance để làm máy chủ cho Storage Gateway.
-    *   Tích hợp thành công với S3 Bucket để lưu trữ dữ liệu.
-    *   Biết cách tạo và cấu hình File Share để chia sẻ dữ liệu.
-  *   Hoàn thành các bài Lab 19, 20 và 25. Nhưng thật sự thì em vẫn chưa hiểu rõ hết nên em dự định sẽ tiếp tục làm lại các bài lab này ạ.
+* Module 04 - 01: Dịch vụ lưu trữ đám mây
+  * Bước đầu vào tìm hiểu về dịch vụ S3 và các dịch vụ liên quan như:
+    * Amazon Storage Gateway
+    * Snow Family
+    * Disaster Recovery on AWS
+    * AWS backup
 
-* Tiếp tục chương trình học lý thuyết với Module 4:
-  *   Học sơ lược về các dịch vụ lưu trữ trên Cloud
-  *   Bắt đầu học về dịch vụ S3  
-      *   Hiểu được cơ bản về dịch vụ S3 và học qua về S3 Access Point
+* Module 04 - 02: Amazon Simple Storage Service ( S3 ) - Access Point - Storage
+  * Tìm hiểu về dịch vụ S3
+  * Hiểu về khái niệm Access Point
+  * Tìm hiểu về các class lưu trữ của S3:
+    * S3 Standard
+    * S3 Standard IA
+    * S3 Intelligence Tiering
+    * S3 One Zone IA
+    * S3 Glacier / Deep Archive
+  
+* Module 04 - 03: S3 Static Website & CORS - Control Access - Object Key & Performance - Glacier
+  * Hiểu về cách S3 host static website 
+  * Hiểu về khái niệm Single Page Application:
+  * Controll Access vào S3:
+    * Dùng S3 Access Control List
+    * Dùng S3 Bucket policy
+    * Dùng IAM Policy
+  * Tìm hiểu về 2 tính năng của S3:
+    * Endpoint
+    * Versioning
+  * Hiểu được các S3 lưu trữ dữ liệu 
+    * Object key
+    * Partitioning sâu bên trong s3 để lưu trữ dữ liệu, khi dữ liệu lưu trữ tăng thì partition sẽ tự chia ra tự động để lưu trữ, gián tiếp làm giảm hiệu năng S3
+  * Tối ưu hóa hiệu năng S3 bằng random prefix: lưu trữ ở trên nhiều partitions nhất có thể
+  * Tìm hiểu về Glacier
 
-
-* Tham gia đóng góp cho cộng đồng:
-  *   Hoàn thành và nộp bài dịch thuật Blog, góp phần xây dựng tài nguyên học tập cho mọi người.
-
-* Thật sự thì em chưa hoàn thành mục tiêu học hết Module 04 và các bài lab liên quan nhưng em sẽ cố gắng hoàn thành trong tuần thứ 6 cũng như sẽ hoàn thành luôn cả Module 5 trong tuần đó để chuẩn bị thi giữa kì.
-
+* Đã làm bài lab10, những gì đạt được
+  * Được tìm hiểu qua dịch vụ CloudFormation của AWS
+  * Thực hành tạo template, cấu hình lại SG, và kết nối với EC2 Instance bằng Remote Desktop Gateway Server (RDGW)
+  * Thực hành tạo Directory Service
+  * Tìm hiểu về Route 53
+    * Tạo Outbound rule cho Route53
+    * Tạo Resolver Rules
+    * Tạo Inbound Rule cho Route 53
+  * Sau đó kiểm tra kết nối thành công
+  * Đã thực hiện được kết nối giữa môi trường on-premise đến với môi trường AWS qua Directory Service và Remote Desktop Gateway Server
 

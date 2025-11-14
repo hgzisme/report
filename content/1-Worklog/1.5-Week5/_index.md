@@ -1,5 +1,5 @@
 ---
-title: "Week 5 Worklog "
+title: "Week 5 Worklog"
 date: 2025-09-09
 weight: 1
 chapter: false
@@ -8,34 +8,61 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-*   Complete the remaining labs from Module 02 and Module 03.
-*   Complete and submit 3 translation articles by the deadline.
-*   Study Module 4.
+*   Study Module 04
+*   Complete Lab 10
+*   Translate and submit a blog post
 
 ### Tasks for this week:
-| Day | Task                                                                                  | Start Date   | End Date     | Reference                                                                                                                                                                                                            |
-| --- | ------------------------------------------------------------------------------------- | ------------ | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mon | - Complete Lab 19 and Lab 20                                                          | 09/06/2025   | 09/06/2025     | [Lab 19](https://000019.awsstudygroup.com/) & [Lab 20](https://000020.awsstudygroup.com/)<br>                                                                                                                            |
-| Tue | - Complete Lab 24<br>+ Create S3 bucket<br>+ Create EC2 for Storage Gateway<br>+ Create File Share | 09/07/2025   | 09/07/2025     | [Lab 24](https://000024.awsstudygroup.com/)                                                                                                                                                                             |
-| Wed | - Complete Lab 25                                                                     | 09/08/2025   | 09/08/2025     | [Lab 25](https://000025.awsstudygroup.com/)                                                                                                                                                                             |
-| Thu | - Work on the blog translation                                                        | 09/09/2025   | 09/09/2025     |                                                                                                                                                                                                                        |
-| Fri | - Submit blog translation<br>- Study Module 4<br>+ 04-01<br>+ 04-02                   | 09/10/2025   | 09/10/2025     | [Module 04-01](https://www.youtube.com/watch?v=hsCfP0IxoaM&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=103) & [Module 04-02](https://www.youtube.com/watch?v=_yunukwcAwc&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=104) |
+| Day | Task                                                                                                                              | Start Date   | Completion Date | Reference                                                                                                                                                                                                                                 |
+| --- | --------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | - Study Module 04-01: Cloud Storage Services <br>- Study Module 04-02: Amazon Simple Storage Service (S3) - Access Point - Storage Classes | 10/06/2025   | 10/06/2025      | [Module 04-01](https://www.youtube.com/watch?v=hsCfP0IxoaM&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=103) & [Module 04-02](https://www.youtube.com/watch?v=_yunukwcAwc&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=104) |
+| 3   | - Study Module 04-03: S3 Static Website & CORS - Access Control - Object Key & Performance - Glacier                           | 10/07/2025   | 10/07/2025      | [Module 04-03](https://www.youtube.com/watch?v=mPBjB6Ltl_Q&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=105)                                                                                                                            |
+| 4   | - Complete Lab 10                                                                                                                 | 10/08/2025   | 10/08/2025      | [Lab10](https://000010.awsstudygroup.com/)                                                                                                                                                                                              |
+| 5   | - Translate an AWS blog post                                                                                                      | 10/09/2025   | 10/09/2025      |                                                                                                                                                                                                                                         |
+| 6   | - Continue translating and submit the blog post                                                                                   | 10/10/2025   | 10/10/2025      |                                                                                                                                                                                                                                         |
 
 ### Week 5 Achievements:
 
-* Reinforced and enhanced practical skills through labs on data storage and management:
-  *   Completed Lab 24, gaining a solid understanding of implementing a hybrid cloud storage solution with **AWS Storage Gateway**:
-    *   Practiced creating an EC2 instance to serve as the gateway host.
-    *   Successfully integrated with an S3 Bucket for data storage.
-    *   Learned how to create and configure a File Share.
-  *   Completed Labs 19, 20, and 25. However, I honestly don't fully understand them yet, so I plan to redo these labs.
+*   Module 04-01: Cloud Storage Services
+    *   Initial introduction to the S3 service and related services such as:
+        *   Amazon Storage Gateway
+        *   AWS Snow Family
+        *   Disaster Recovery on AWS
+        *   AWS Backup
 
-* Continued theoretical learning with Module 4:
-  *   Learned an overview of cloud storage services.
-  *   Started learning about the S3 service.
-    *   Understood the basics of the S3 service and learned about S3 Access Points.
+*   Module 04-02: Amazon Simple Storage Service (S3) - Access Point - Storage Classes
+    *   Learned about the S3 service.
+    *   Understood the concept of an Access Point.
+    *   Learned about S3 storage classes:
+        *   S3 Standard
+        *   S3 Standard-IA (Infrequent Access)
+        *   S3 Intelligent-Tiering
+        *   S3 One Zone-IA
+        *   S3 Glacier / Deep Archive
 
-* Contributed to the community:
-  *   Completed and submitted a blog translation, contributing to the creation of learning resources for everyone.
+*   Module 04-03: S3 Static Website & CORS - Access Control - Object Key & Performance - Glacier
+    *   Understood how S3 hosts static websites.
+    *   Understood the concept of a Single Page Application (SPA).
+    *   Controlling access to S3:
+        *   Using S3 Access Control Lists (ACLs)
+        *   Using S3 Bucket Policies
+        *   Using IAM Policies
+    *   Learned about two S3 features:
+        *   Endpoints
+        *   Versioning
+    *   Understood how S3 stores data:
+        *   Object Key
+        *   Learned about the internal partitioning in S3 for data storage. As the amount of data increases, partitions split automatically, which can indirectly impact S3 performance.
+    *   Optimizing S3 performance using random prefixes to distribute objects across as many partitions as possible.
+    *   Learned about Glacier.
 
-*  Honestly, I did not achieve my goal of finishing all of Module 04 and its related labs, but I will strive to complete it in week 6. I will also aim to finish Module 5 during that week to prepare for the midterm exam.
+*   Completed Lab 10, achievements include:
+    *   Gained an introduction to the AWS CloudFormation service.
+    *   Practiced creating a template, reconfiguring a Security Group (SG), and connecting to an EC2 Instance using a Remote Desktop Gateway Server (RDGW).
+    *   Practiced creating a Directory Service.
+    *   Learned about Route 53:
+        *   Created an Outbound Endpoint for Route 53.
+        *   Created Resolver Rules.
+        *   Created an Inbound Endpoint for Route 53.
+    *   Successfully tested the connection afterward.
+    *   Successfully established a connection between an on-premises environment and the AWS environment via Directory Service and a Remote Desktop Gateway Server.
