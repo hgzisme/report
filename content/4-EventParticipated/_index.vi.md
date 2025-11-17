@@ -5,25 +5,57 @@ weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
 
-### [Event 1](4.1-Event1/)
+> Trong phần này, bạn sẽ liệt kê và mô tả chi tiết các sự kiện đã tham gia trong suốt kỳ thực tập hoặc quá trình làm việc.
+>
+> Mỗi sự kiện cần được trình bày theo định dạng Sự kiện 1, Sự kiện 2, Sự kiện 3…, cùng với các thông tin chi tiết sau:
+> * Tên sự kiện
+> * Thời gian diễn ra
+> * Địa điểm (nếu có)
+> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ sự kiện, diễn giả, v.v.)
+> * Mô tả ngắn gọn về nội dung và hoạt động chính của sự kiện
+> * Kết quả hoặc giá trị nhận được (bài học kinh nghiệm, kỹ năng mới, đóng góp cho nhóm/dự án)
+> * Việc liệt kê này giúp thể hiện sự tham gia thực tế cũng như các kỹ năng mềm và kinh nghiệm mà bạn đã tích lũy được từ mỗi sự kiện.
+
+Trong kỳ thực tập của mình, em đã tham gia bốn sự kiện. Mỗi sự kiện đều là một trải nghiệm đáng nhớ, mang lại những kiến thức mới mẻ, thú vị và bổ ích, cùng với những món quà và khoảnh khắc tuyệt vời.
+
+### [Sự kiện 1](4.1-Event1/)
 &emsp;**Tên sự kiện:** Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders - Track 2: Migration and Modernization
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:** 13:00, ngày 18 tháng 9 năm 2025
 
-&emsp;**Địa điểm:** Tầng 36, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** Tầng 36, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Vai trò:** Người tham dự
 
+---
 
+### [Sự kiện 2](4.2-Event2/)
+&emsp;**Tên sự kiện:** Discover Agentic AI: Amazon QuickSuite Workshop
 
-### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+&emsp;**Thời gian:** 09:00, ngày 7 tháng 11 năm 2025
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Vai trò:** Người tham dự
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+---
+
+### [Sự kiện 3](4.3-Event3/)
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS Workshop
+
+&emsp;**Thời gian:** 8:00, ngày 15 tháng 11 năm 2025
+
+&emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
+
+&emsp;**Vai trò:** Người tham dự
+
+### [Sự kiện 4](4.4-Event4/)
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #2 : DevOps on AWS Workshop
+
+&emsp;**Thời gian:** 8:00, ngày 15 tháng 11 năm 2025
+
+&emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
+
+&emsp;**Vai trò:** Người tham dự
 

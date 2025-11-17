@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
-
 > In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
 > 
 > Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
@@ -26,7 +22,7 @@ During my internship, I participated in two events. Each one was a memorable exp
 ### [Event 1](4.1-Event1/)  
 &emsp;**Event Name:** Vietnam Cloud Day 2025 : Ho Chi Minh City Connect Edition for Builders - Track 2: Migration and Modernization
 
-&emsp;**Date & Time:** 13:00, 18 September 2025, 2025  
+&emsp;**Date & Time:** 13:00, 18 September 2025  
 
 &emsp;**Location:** 36th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
@@ -35,10 +31,30 @@ During my internship, I participated in two events. Each one was a memorable exp
 ---
 
 ### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Event Name:** Discover Agentic AI: Amazon QuickSuite Workshop  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** 09:00, 7 November 2025  
 
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee  
+
+---
+
+### [Event 3](4.3-Event3/)  
+&emsp;**Event Name:** AWS Cloud Mastery Series #1 : AI/ML/GenAI on AWS Workshop
+
+&emsp;**Date & Time:** 8:00, 15 November 2025  
+
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+
+&emsp;**Role:** Attendee 
+
+### [Event 4](4.4-Event4/)  
+&emsp;**Event Name:** AWS Cloud Mastery Series #2 : DevOps on AWS Workshop
+
+&emsp;**Date & Time:** 8:00, 15 November 2025  
+
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+
+&emsp;**Role:** Attendee 
