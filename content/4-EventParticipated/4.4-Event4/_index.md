@@ -20,6 +20,9 @@ pre: " <b> 4.4. </b> "
 -   Quoc Bao
 -   Phuc Thinh
 -   Dai Vi
+-   Long Huynh
+-   Quy Pham
+-   Nghiem Le
 
 ### Key Content & Highlights
 

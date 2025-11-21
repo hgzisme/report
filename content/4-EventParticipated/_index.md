@@ -58,3 +58,21 @@ During my internship, I participated in two events. Each one was a memorable exp
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee 
+
+### [Event 5](4.5-Event5/)  
+&emsp;**Event Name:** AWS Edge Services Workshop  
+
+&emsp;**Date & Time:** 09:00, 18 November 2025  
+
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+
+&emsp;**Role:** Attendee 
+
+### [Event 6](4.6-Event6/)  
+&emsp;**Event Name:** Amazon Q Developer for SAP ABAP Workshop 
+
+&emsp;**Date & Time:** 13:00, 20 November 2025  
+
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+
+&emsp;**Role:** Attendee 

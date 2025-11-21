@@ -59,3 +59,20 @@ Trong kỳ thực tập của mình, em đã tham gia bốn sự kiện. Mỗi s
 
 &emsp;**Vai trò:** Người tham dự
 
+### [Sự kiện 5](4.5-Event5/)
+&emsp;**Tên sự kiện:** Workshop về Dịch vụ AWS Edge
+
+&emsp;**Thời gian:** 09:00, ngày 18 tháng 11 năm 2025
+
+&emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
+
+&emsp;**Vai trò:** Người tham dự
+
+### [Sự kiện 6](4.6-Event6/)
+&emsp;**Tên sự kiện:** Workshop Amazon Q Developer cho SAP ABAP
+
+&emsp;**Thời gian:** 13:00, ngày 7 tháng 11 năm 2025
+
+&emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
+
+&emsp;**Vai trò:** Người tham dự
