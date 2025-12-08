@@ -5,11 +5,6 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud Journey, giúp team FCJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
 ### Đánh giá chung
 
@@ -34,11 +29,19 @@ Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về t
 
 ### Một số câu hỏi khác
 - Điều bạn **hài lòng nhất** trong thời gian thực tập?  
+    -   Điều làm mình cảm thấy hài lòng nhất trong thời gian thực tập đó chính là sự tận tình của các anh chị mentor, luôn sẵn sàng hỗ trợ cho các bạn học viên, giải đáp các thắc mắc cũng như giúp cấc bạn đề ra phương hướng xử lí vấn đề
 - Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
+    -   Em nghĩ công ty cần cải thiện những điều như là hỗ trợ các bạn làm các bài Lab, nên có một thông báo chung cho mọi người là học những phần nào, và thời gian nào sẽ có những bài lab đó, để mọi người có thêm hướng cho quá tình học. Thì thật sự qua trải nghiệm của em thì em thấy khá mông lung khi mới bắt đầu vào học, deadline cũng không rõ ràng cũng như các bài lab có những bài yêu cầu một mức cao hơn tài khoản Free Tier, thì em nghĩ công ty có thể cải thiện điều này bằng cách lên lịch thực hiện các bài lab cho tất cả mọi người, cũng như thêm nhãn mác cho các bài lab nào không phù hợp với Free Tier.
 - Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+    -   Nếu giới thiệu cho bạn bè thì mình sẽ có 2 đối tượng khác nhau:
+        -   Nếu là bạn học ngành liên quan đến an ninh mạng thì đây thật sự là một chỗ thực tập tuyệt vời, vì có rất nhiều dịch vụ và kiến thức cần thiết về an ninh mạng có thể được học ở đây
+        -   Còn nếu không liên quan đến ngành an ninh mạng mà là các ngành khác như kĩ sư phần mềm,... thì mình khuyên là hãy cân nhắc học ở đây vì kiến thức về mạng ở đây khá nhiều, và cũng có rất nhiều dịch vụ liên quan đến mạng, thực tế thì bạn vẫn sẽ học được thôi, nhưng sẽ chậm hơn các bạn học an ninh mạng hơn rất nhiều. Vấn đề là các bạn phải có cố gắng học tập thì mới có thể theo đuổi được. 
+        => Nhìn chung thì mình sẽ khuyến khích mọi người học nhưng cũng nên có những điều cần cân nhắc như là đây là môi trường đòi hỏi tính tự học cao rất cao, cũng như các bạn cũng phải có trách nhiệm hoàn thành đúng tiến độ khi đã chọn thực tập.
 
 
 ### Đề xuất & mong muốn
 - Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
+    -   Em không có đề xuất gì hết ạ.
+- Bạn có muốn tiếp tục chương trình này trong tương lai? 
+    -   Em sẽ tiếp tục chương trình này trong tương lai
 - Góp ý khác (tự do chia sẻ):

@@ -15,14 +15,14 @@ pre: " <b> 4.4. </b> "
 - **Build Resilient and Observable Systems**: To equip attendees with the knowledge to not only deploy applications efficiently but also to monitor, trace, and manage them effectively in a complex, distributed environment.
 
 ### List of Speakers
--   Truong Quang Tinh
--   Van Hoang Kha
--   Quoc Bao
--   Phuc Thinh
--   Dai Vi
--   Long Huynh
--   Quy Pham
--   Nghiem Le
+-   Truong Quang Tinh - DevOps Engineer, TymeX
+-   Van Hoang Kha - Cloud Security Engineer, AWS Vietnam
+-   Quoc Bao - AWS Vietnam
+-   Phuc Thinh - AWS Vietnam
+-   Dai Vi - AWS Vietnam
+-   Long Huynh - AWS Vietnam
+-   Quy Pham - AWS Vietnam
+-   Nghiem Le - AWS Vietnam
 
 ### Key Content & Highlights
 

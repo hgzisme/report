@@ -5,55 +5,32 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thành bài tập Coursera của trường đại học FPT 
+* Tiếp tục làm dự án
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2   | - Tham dự sự kiện AWS Cloud Mastery #2: ​DevOps on AWS <br/>-  Làm bài tập Coursera của trường đại học FPT                                             | 17/11/2025   | 17/11/2025      |
+| 3   | -  Làm bài tập Coursera của trường đại học FPT        | 18/11/2025   | 18/11/2025      |  |
+| 4   | - Làm Proposal cuối kì                 | 19/11/2025   | 19/11/2025      |  |
+| 5   | - Làm Proposal cuối kì                  | 20/11/2025   | 20/11/2025      |  |
+| 6   | - Làm Proposal cuối kì               | 21/11/2025   | 21/11/2025      |  |
 
 ### Kết quả đạt được tuần 11:
+- Hoàn thành các bài tập Coursera của trường đại học FPT, chuẩn bị ôn thi môn học
+- Tìm hiểu được thêm về DevOps, qui trình CI/CD, IaC với CloudFormation và AWS CDK
+- Tìm hiểu về dịch vụ container như Docker và container trên AWS
+  - ECR, ECS & EKS, App Runner
+- Tìm hiểu về Monitoring & Observability với CloudWatch và AWS X-Ray
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Khó khăn:
+- Ý tưởng Proposal gặp một số khó khăn về vận hành, về chi phí vượt mức cao, scope dự án khá phức tạp
+-> Tụi em đã chuyển đổi đề tài proposal sau khi cân nhắc về các khó khăn mà dự án trước sẽ gặp phải
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Về phần event thì em chưa hoàn toàn nắm rõ hết về các dịch vụ Container, Monitoring & Observability
+-> E định sẽ tự mình tìm hiểu thêm để hiểu hơn về các dịch vụ này
 

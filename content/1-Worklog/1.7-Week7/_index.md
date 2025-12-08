@@ -12,7 +12,7 @@ pre: " <b> 1.7. </b> "
 *   Do Lab19 & Lab53
 
 ### Tasks for this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Sources |
 |-----|------|------------|-----------------|--------------------|
 | 2   |  - Learn Module 06 - 01: Database Concepts review   | 20/10/2025 | 20/10/2025      |   [Module 06 - 01](https://www.youtube.com/watch?v=OOD2RwWuLRw&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=217)                |
 | 3   |    - Learn Module 06 - 02: Amazon RDS & Amazon Aurora   | 21/10/2025 | 21/10/2025      |   [Module 06 - 02](https://www.youtube.com/watch?v=qbrobQZrokY&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=218)                 |

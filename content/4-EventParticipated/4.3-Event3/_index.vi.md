@@ -15,9 +15,9 @@ pre: " <b> 4.3. </b> "
 - **Kết nối Lý thuyết với Giá trị thực tiễn**: Minh họa cách các công nghệ tiên tiến này có thể được tận dụng để giải quyết các bài toán kinh doanh, nâng cao sản phẩm và thúc đẩy sự đổi mới trong thị trường Việt Nam.
 
 ### Danh Sách Diễn Giả
--   Đinh Lê Hoàng Anh
--   Lâm Tuấn Kiệt
--   Danh Hoàng Hiếu Nghị
+-   Đinh Lê Hoàng Anh - AWS Vietnam
+-   Lâm Tuấn Kiệt - AWS Vietnam
+-   Danh Hoàng Hiếu Nghị - AWS Vietnam
 
 ### Nội Dung Chính & Điểm Nổi Bật
 

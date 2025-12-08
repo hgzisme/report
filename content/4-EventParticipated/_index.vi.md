@@ -76,3 +76,21 @@ Trong kỳ thực tập của mình, em đã tham gia bốn sự kiện. Mỗi s
 &emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
 
 &emsp;**Vai trò:** Người tham dự
+
+### [Sự kiện 7](4.7-Event7/)
+&emsp;**Tên sự kiện:** AWS Cloud Mastery Series #3 : AWS Well-Architected Security Pillar Workshop
+
+&emsp;**Thời gian:** 08:30, ngày 29 tháng 11 năm 2025
+
+&emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
+
+&emsp;**Vai trò:** Người tham dự
+
+### [Sự kiện 8](4.8-Event8/)
+&emsp;**Tên sự kiện:** Building Agentic AI & Context Optimization with Amazon Bedrock
+
+&emsp;**Thời gian:** 09:00, ngày 5 tháng 12 năm 2025
+
+&emsp;**Địa điểm:** Tầng 26, Tháp Bitexco, 02 đường Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM
+
+&emsp;**Vai trò:** Người tham dự

@@ -8,24 +8,24 @@ chapter: false
     
 # Internship Report
 
-### Thông tin Sinh viên:
-&emsp; **Họ và tên:** Nguyễn Học Hoàng
+### Student Information:
+&emsp; **Full Name:** Nguyễn Học Hoàng
 
-&emsp; **Số điện thoại:** 0867915848
+&emsp; **Phone Number:** 0867915848
 
 &emsp; **Email:** bluax1604@gmail.com
 
-&emsp; **Trường Đại học:** Đại học FPT
+&emsp; **University:** FPT University
 
-&emsp; **Chuyên ngành:** Kỹ thuật Phần mềm
+&emsp; **Major:** Software Engineering
 
-&emsp; **Lớp:** AWS092025
+&emsp; **Class:** AWS092025
 
-&emsp; **Công ty Thực tập:** Công ty TNHH Amazon Web Services Việt Nam
+&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
-&emsp; **Vị trí Thực tập:** Thực tập sinh FCJ Cloud
+&emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Thời gian Thực tập:** Từ ngày 08/09/2025 đến ngày 12/12/2025
+&emsp; **Internship Duration:** From September 08, 2025 to December 12, 2025
 
 ![Your profile picture](/images/Avatar.jpg)
 

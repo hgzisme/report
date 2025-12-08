@@ -12,7 +12,7 @@ pre: " <b> 1.4. </b> "
 * Complete Lab 07 and Lab 09
 
 ### Tasks for this week:
-| Day | Task                                                              | Start Date | End Date   | Reference                                                                                                       |
+| Day | Task                                                              | Start Date | End Date   | Reference Sources                                                                                                       |
 | --- | ----------------------------------------------------------------- | ---------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
 | Mon | - Study Module 03-01-05: User Data                                | 29/09/2025 | 29/09/2025 | [Module 03-01-05](https://www.youtube.com/watch?v=_v_43Wi7zjo&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=77) |
 | Tue | - Study Module 03-01-06: Meta Data                                | 30/09/2025 | 30/09/2025 | [Module 03-01-06](https://www.youtube.com/watch?v=Ew3QRaKJQSA&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=78) |

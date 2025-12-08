@@ -15,9 +15,9 @@ pre: " <b> 4.3. </b> "
 - **Connect Theory to Real-World Value**: To illustrate how these advanced technologies can be leveraged to solve business problems, enhance products, and drive innovation within the Vietnamese market.
 
 ### List of Speakers
--   Dinh Le Hoang Anh
--   Lam Tuan Kiet
--   Danh Hoang Hieu Nghi
+-   Dinh Le Hoang Anh - AWS Vietnam
+-   Lam Tuan Kiet 
+-   Danh Hoang Hieu Nghi - AWS Vietnam
 
 ### Key Content & Highlights
 

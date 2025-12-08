@@ -13,7 +13,7 @@ pre: " <b> 1.6. </b> "
 *   Prepare for lab exercises
 
 ### Tasks for this week:
-| Day | Task                                                                                                                                                                                           | Start Date   | End Date        | Resources                                |
+| Day | Task                                                                                                                                                                                           | Start Date   | End Date        | Reference Sources                                |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ---------------------------------------- |
 | Mon | - Study Module 04 - 04: Snow Family - Storage Gateway - Backup                                                                                                                                 | 13/10/2025   | 13/10/2025      | [Module 04 - 04](https://www.youtube.com/watch?v=YXn8Q_Hpsu4&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=106) |
 | Tue | - Study Module 05 - 01: Shared Responsibility Model <br> - Study Module 05 - 02: Amazon Identity and Access Management                                                                            | 14/10/2025   | 14/10/2025      | [Module 05 - 01](https://www.youtube.com/watch?v=tsobAlSg19g&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=150) <br> [Module 05 - 02](https://www.youtube.com/watch?v=N_vlJGAqZxo&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=151)  |

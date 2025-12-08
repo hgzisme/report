@@ -15,14 +15,14 @@ pre: " <b> 4.4. </b> "
 - **Xây dựng hệ thống bền vững và có khả năng quan sát**: Trang bị cho người tham dự kiến thức không chỉ để triển khai ứng dụng hiệu quả mà còn để giám sát, truy vết và quản lý chúng một cách hiệu quả trong một môi trường phân tán phức tạp.
 
 ### Danh Sách Diễn Giả
--   Trương Quang Tính
--   Văn Hoàng Kha
--   Quốc Bảo
--   Phúc Thịnh
--   Đại Vĩ
--   Long Huỳnh
--   Quy Phạm
--   Nghiêm Lê
+-   Trương Quang Tính - DevOps Engineer, TymeX
+-   Văn Hoàng Kha - Cloud Security Engineer, AWS Vietnam
+-   Quốc Bảo - AWS Vietnam
+-   Phúc Thịnh - AWS Vietnam
+-   Đại Vĩ - AWS Vietnam
+-   Long Huỳnh - AWS Vietnam
+-   Quy Phạm - AWS Vietnam
+-   Nghiêm Lê - AWS Vietnam
 
 
 ### Nội Dung Chính & Điểm Nổi Bật

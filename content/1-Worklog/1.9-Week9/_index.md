@@ -11,7 +11,7 @@ pre: " <b> 1.9. </b> "
 * Attend the AI event at AWS
 
 ### Tasks to be completed this week:
-| Day | Task                                                                                                                  | Start Date   | End Date        | Resources                                 |
+| Day | Task                                                                                                                  | Start Date   | End Date        | Reference Sources                                |
 | --- | --------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | Mon | - Review React JS                                                                                                     | 03/11/2025   | 03/11/2025      |                                           |
 | Tue | - Start the AWS Builder course (AWS Cloud Practitioner Essentials) to reinforce AWS knowledge                         | 04/11/2025   | 04/11/2025      |  |

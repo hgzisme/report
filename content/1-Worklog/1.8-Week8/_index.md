@@ -13,7 +13,7 @@ pre: " <b> 1.8. </b> "
 *   Prepare for the midterm exam on Friday
 
 ### Tasks for this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
+| Day | Task | Start Date | Completion Date | Reference Sources |
 |-----|------|------------|-----------------|--------------------|
 | 2   |  - Work on the Final Proposal   | 27/10/2025 | 27/10/2025      |               |
 | 3   |    - Work on the Final Proposal     | 28/10/2025 | 2/10/2025       |                  |

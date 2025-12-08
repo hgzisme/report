@@ -60,6 +60,3 @@ pre: " <b> 4.6. </b> "
 
 ### Trải nghiệm tại Sự kiện
 Workshop "Amazon Q Developer cho SAP ABAP" là một lớp học chuyên sâu và khai sáng, mang lại cảm giác như một cái nhìn chân thực về tương lai của phát triển doanh nghiệp. Ngay từ đầu, đã rõ ràng rằng đây không chỉ là về một công cụ mới, mà là về một sự thay đổi căn bản trong mô hình phát triển.
-
-#### Làm chủ Kỹ năng
-Workshop đã tiến từ việc trình diễn phép màu sang việc dạy chúng tôi cách trở thành những pháp sư. Việc tập trung vào kỹ thuật tạo lời nhắc và các phương pháp tối ưu là phần giá trị nhất trong ngày. Nó cung cấp một bộ khung tư duy để kiểm soát và định hướng AI, biến nó từ một nhà tiên tri khó đoán thành một đối tác lập trình đáng tin cậy ở cấp độ chuyên gia. Rời khỏi workshop, cảm giác không chỉ là sự hào hứng về một công nghệ mới, mà còn là một cảm giác được trao
