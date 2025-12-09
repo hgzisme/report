@@ -6,188 +6,119 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# DocuVerse PLatform
+Here is the English translation of your project proposal, formatted to match the original structure.
 
-### 1. Executive Summary
+# SnapResume Platform
 
-The **DocuVerse Platform** is a digital marketplace and advanced reader designed to provide a focused and interactive learning experience for customers through educational documents. The platform allows administrators and creators to upload and sell content such as e-books, research papers, study guides, and interactive quizzes (CRUD). For students, it offers a user-centric front end for purchasing, organizing, and studying documents.
+## 1\. Project Summary
 
-Its key differentiator remains the integrated **"Focus Mode,"** adapted for reading, which helps users concentrate with a Pomodoro timer, Google Calendar integration for study scheduling, and a distraction-free interface. Furthermore, an innovative note-taking system allows users to create highlights, notes, and actionable tasks linked directly to specific pages or paragraphs within the documents.
+SnapResume is an intelligent, AI-powered resume-building platform designed to help job seekers create professional, ATS (Applicant Tracking System) compliant resumes quickly and efficiently. The platform offers modern design templates, intuitive editing tools, and a smart recommendation system that optimizes content to match job descriptions.
 
-### 2. Problem Statement
+The key differentiator is the integration of an AI Search & Recommendation Engine using **AWS Bedrock** (Claude 3 Sonnet). This allows the system to automatically analyze job descriptions and suggest the most relevant resume sections from the user's experience data repository. The system is built entirely on a Serverless architecture, ensuring infinite scalability and optimized costs.
 
-#### What’s the Problem?
+## 2\. Problem Statement
 
-*   **Passive Reading and Low Retention:** Students often read digital documents passively without active engagement, leading to poor information retention and making it difficult to recall key concepts.
-*   **Disconnect Between Content and Action:** There is a significant disconnect between reading material and creating actionable study notes. Students struggle to organize highlights and to-do lists that link directly back to the source text, making review inefficient.
-*   **Distraction and Poor Time Management:** The digital reading environment is filled with distractions. Learners lack integrated tools to manage their study time effectively, block out interruptions, and structure their reading sessions for optimal focus and productivity.
+### What is the problem?
 
-#### The Solution
+  * **Formatting Difficulties:** Job seekers often spend hours formatting text in Word or complex design tools without achieving a professional look.
+  * **Difficulty in Selecting Information:** Candidates often have extensive experience but struggle to select what is most relevant to a specific position. Sending a "generic" CV to every company reduces the chance of acceptance.
+  * **ATS Rejection:** Manually designed resumes often contain graphic elements or table structures that make them unreadable to employers' automated Applicant Tracking Systems (ATS).
 
-DocuVerse is built on a serverless AWS architecture to enable flexibility, scalability, and cost efficiency. The system leverages **AWS Amplify, Lambda, API Gateway, DynamoDB, S3, and Cognito** to create a secure, low-cost, and high-performance digital marketplace. Users can purchase documents, read them in an enhanced viewer, manage study tasks linked to the content, and use interactive tools—all within a cloud-native, globally available infrastructure.
+### The Solution
 
-#### Benefits and Return on Investment:
+SnapResume addresses these issues with a modern React web application built on the AWS Serverless platform.
 
-*   Serverless approach minimizes operational costs and manual maintenance.
-*   Scales automatically based on user activity.
-*   Uses AWS Free Tier and pay-per-use pricing, keeping average cost below $100/month.
-*   Enhances engagement and retention through integrated productivity features.
+  * **Visual Editor:** Simple drag-and-drop or form-filling interface with Real-time Preview.
+  * **AI Smart Matcher:** Uses **AWS Bedrock** to analyze the relevance between the candidate's experience and job requirements, thereby recommending a list of skills and projects to include in the CV.
+  * **ATS Compliant:** Templates are designed to be machine-friendly while remaining aesthetically pleasing for human readers.
+  * **Centralized Management:** Stores a library of sections and allows for "assembling" multiple resume versions based on specific needs.
 
-### 3. Solution Architect
+## 3\. Solution Architecture
 
-The architecture remains largely the same, as it is perfectly suited for this use case. The data and content being handled will simply change.
+The system utilizes Serverless and Event-driven architecture on AWS.
+![AWS Architecture](/images/2-Proposal/SnapResume.png)
 
-#### Architecture Overview
-![DocuVerse Platform](/images/2-Proposal/DocuVerse.jpg)
+### Architecture Overview
 
-*   **Amazon S3:** Stores the core digital assets:
-    *   E-books (PDF, EPUB formats)
-    *   Quiz data (JSON files)
-    *   Study guides and other documents.
-*   **Amazon DynamoDB:** Primary NoSQL database storing:
-    *   User profiles and purchase history.
-    *   Document metadata (title, author, price, description, file path in S3).
-    *   User-generated content: Highlights, notes, and task lists with references to document pages/paragraphs.
-    *   Progress tracking (e.g., last-read page).
-    *   Focus Mode session history.
-*   **AWS Lambda:** Executes application business logic including:
-    *   Document CRUD operations.
-    *   Securely generating pre-signed URLs for S3 to allow authenticated users to download/view their purchased documents.
-    *   User note-taking and highlighting workflows.
-    *   Focus Mode interactions.
-*   **Other Services (Cognito, API Gateway, CloudFront, etc.):** Their roles remain identical to the original plan, providing authentication, API endpoints, and global content delivery.
+  * **Frontend:** React + Vite + Ant Design (hosted on Amplify and accelerated via CloudFront).
+  * **API Layer:** Amazon API Gateway + AWS Lambda (Node.js/TypeScript).
+  * **Database:** Amazon DynamoDB for storing Users, Resumes, Sections, and Templates.
+  * **Authentication:** Amazon Cognito (User Pools & Identity Pools).
+  * **AI Engine:** Amazon Bedrock (Claude 3 Sonnet) for analysis and recommendation tasks.
+  * **Storage:** Amazon S3 for storing profile pictures and PDF files.
 
-### 4. Technical Implementation
+## 4\. Technical Implementation
 
-#### Implementation Phases
-The 3-month timeline is still feasible for an MVP.
+### Technology Stack
 
-#### Technical Requirements
-*   **Learning Platform:** The AWS stack remains the same. The key change is in the front-end (React/Next.js), which will need a robust PDF or EPUB viewer component (like react-pdf) to render documents and support the highlighting/note-taking functionality.
-*   **Focus Mode System:** This feature adapts beautifully. The Pomodoro timer and calendar integration can be tied to "reading sessions" instead of "video sessions."
+  * **Frontend:** ReactJS, Ant Design, CSS Modules, html2pdf.js for PDF export.
+  * **Backend:** NodeJS, TypeScript, Express (running inside Lambda).
+  * **IaC:** Terraform for managing the entire infrastructure.
 
-### 5. Timeline & Milestones
+### Phases
 
-#### Project Timeline
+1.  **Phase 1: Core Foundation** (Completed)
+      * Setup AWS Infrastructure (Terraform).
+      * Build Authentication (Cognito).
+      * Basic CRUD for Resumes & Sections (DynamoDB + Lambda).
+2.  **Phase 2: Editor & Templates** (Completed)
+      * Develop Universal Editor Interface (Extension/Web).
+      * Build Dynamic Template System.
+      * PDF Export Feature (html2pdf.js).
+3.  **Phase 3: AI Integration & Polish** (In Progress)
+      * Integrate Amazon Bedrock for "AI Recommendation" feature.
+      * Optimize UX/UI (Features Page, Editor Flow).
+      * Extension Integration (Web Clipper flow).
 
-The original 3-month timeline is still realistic for developing a Minimum Viable Product (MVP).
+## 5\. Budget Estimate (AWS Costs)
 
-1.  **Month 1:** Study AWS, research document viewer libraries (e.g., PDF.js), and finalize the data models for DynamoDB.
-2.  **Month 2:** Design and adjust architecture. Develop backend logic for document uploads, purchases, and secure access.
-3.  **Month 3:** Implement the React front-end with the document viewer and note-taking features. Test and launch.
+The Serverless pricing model ensures costs are proportional to usage. AI costs are focused on analyzing large input data (Input Tokens).
 
-### 6. Budget Estimation
+### Assumptions
 
-This section provides a detailed monthly cost estimation based on low, medium, and high traffic scenarios. The serverless model ensures you only pay for what you use, making it extremely cost-effective for a small educational project.
+  * 1 Resume "Match" = 1 AI Call (Analyze Job Description + All Sections).
+  * 1 AI Analysis Call = \~2,000 input tokens (JD + Sections) + \~500 output tokens (JSON Result).
+  * Bedrock Pricing (Claude 3 Sonnet): $3.00/1M input, $15.00/1M output.
+  * AI Cost per Analysis: \~ $0.0135.
 
-#### Core Assumptions
-*   **Average Document Size:** 5 MB
-*   **Lambda Memory:** 256 MB
-*   **DynamoDB Item Size:** 1 KB
-*   **Region:** us-east-1 (N. Virginia)
+| Service | Pricing Model | Low Traffic (MVP) | Medium Traffic |
+| :--- | :--- | :--- | :--- |
+| **Scale** | | **\< 500 Users/month** | **\~ 5,000 Users/month** |
+| Amazon S3 | Storage | $0.28 | $0.77 |
+| CloudFront | CDN | Free Tier | Free Tier |
+| API GW + Lambda | Compute | Free Tier | $2.80 |
+| DynamoDB | Database | Free Tier | $6.25 |
+| Cognito | Auth | Free Tier | Free Tier |
+| Amazon Bedrock (AI) | Tokens | TBD | TBD |
+| WAF + Route53 | Security | $12.60 | $12.60 |
+| **Total Cost / Month** | | **\~ $12.88** | **\~ $13.37** |
 
-| Service                          | Pricing Model                | Low Traffic (Launch Phase)                              | Medium Traffic (Growing)                                     | High Traffic (Established)                                       |
-| :------------------------------- | :--------------------------- | :------------------------------------------------------ | :----------------------------------------------------------- | :--------------------------------------------------------------- |
-| **Assumptions**                  |                              | ~200 MAU <br> 500 doc views/mo <br> 10,000 API calls/mo | ~2,000 MAU <br> 5,000 doc views/mo <br> 100,000 API calls/mo | ~10,000 MAU <br> 50,000 doc views/mo <br> 1,000,000 API calls/mo |
-| **Amazon S3**                    | Storage + Data Transfer      | $0.10 <br> (5 GB storage, 2.5 GB transfer)              | $1.00 <br> (20 GB storage, 25 GB transfer)                   | $10.00 <br> (100 GB storage, 250 GB transfer)                    |
-| **CloudFront**                   | Data Transfer + Requests     | $0.25 <br> (Using S3 transfer estimates)                | $2.20 <br> (Cheaper than S3 direct)                          | $21.50 <br> (Bulk of the cost)                                   |
-| **AWS Lambda**                   | Requests + Duration (GB-s)   | $0.00 <br> (Within Free Tier)                           | $0.00 <br> (Within Free Tier)                                | $1.50 <br> (Slightly over Free Tier)                             |
-| **API Gateway**                  | Requests                     | $0.00 <br> (Within Free Tier)                           | $0.00 <br> (Within Free Tier)                                | $1.00 <br> (1M requests with $1/M)                                  |
-| **DynamoDB**                     | Read/Write Units (On-Demand) | $0.00 <br> (Within Free Tier)                           | $0.50 <br> (Small usage)                                     | $5.00 <br> (More notes, reads, writes)                           |
-| **Amazon Cognito**               | Monthly Active Users (MAU)   | $0.00 <br> (Up to 50k MAU Free)                         | $0.00 <br> (Up to 50k MAU Free)                              | $0.00 <br> (Up to 50k MAU Free)                                  |
-| **Route 53**                     | Hosted Zone                  | $0.50 (Fixed)                                           | $0.50 (Fixed)                                                | $0.50 (Fixed)                                                    |
-| **AWS WAF**                      | Base + Rules + Requests      | $6.00                                                   | $6.10                                                        | $7.00                                                            |
-| **CloudWatch**                   | Logs, Metrics, Alarms        | $0.00 <br> (Within Free Tier)                           | $0.50 <br> (Increased logging)                               | $3.00 <br> (High-traffic monitoring)                             |
-| **Total Estimated Monthly Cost** |                              | **~ $7**                                                | **~ $11**                                                    | **~ $50**                                                        |
+## 6\. Risk Assessment
 
-### 7. Risk Assessment
+### Security & Privacy Risks (High)
 
-#### Risk Matrix
+  * **Issue:** The Recommendation feature requires sending the user's entire Section data to Bedrock for analysis.
+  * **Mitigation:**
+      * AWS Bedrock complies with regulations ensuring customer data is not used to train base models.
+      * Data encryption at rest in DynamoDB.
 
-| Risk Category                                  | Description                                                                                                                                                     | Impact | Probability |
-| :--------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- | :---------- |
-| **Security Breach**                            | Unauthorized access to user data (PII, purchase history), administrative functions, or proprietary document content.                                            | High   | Low         |
-| **Content Piracy & Unauthorized Distribution** | Users download purchased documents and share them illegally on other platforms, undermining the core business model.                                            | High   | Medium      |
-| **Cost Overruns**                              | The monthly AWS bill significantly exceeds the projected budget due to a DDoS attack, a bug (e.g., infinite Lambda loop), or misconfiguration.                  | Medium | Medium      |
-| **Service Downtime / Unavailability**          | The platform becomes inaccessible due to a failed deployment, infrastructure failure, or a critical bug, preventing users from accessing or purchasing content. | Medium | Low         |
-| **Data Loss**                                  | Accidental or malicious deletion of critical data, such as user accounts, purchase records in DynamoDB, or the original documents stored in S3.                 | High   | Very Low    |
-| **Performance Degradation**                    | The application becomes slow and unresponsive (e.g., slow document loading, long API response times), leading to a poor user experience.                        | Medium | Low         |
+### Cost Risks (Medium)
 
-#### Mitigation Strategies (How to prevent problems)
+  * **Issue:** Users spamming the "Recommend" button with long Job Descriptions causing high Input Token usage.
+  * **Mitigation:**
+      * Limit the length of Job Description Input.
+      * Implement Quota limits (e.g., 10 analysis calls/day for Free accounts).
 
-These are proactive measures implemented during the development and operational phases to reduce the probability and/or impact of the identified risks.
+### Architectural Risks (Low)
 
-##### Security Breach
-1.  **IAM Least Privilege:** Grant permissions on a "need-to-know" basis. Lambda functions should only have access to the specific AWS resources they require.
-2.  **WAF & Input Validation:** Use AWS WAF to block common web attacks (SQLi, XSS). Validate and sanitize all user input on both the frontend and in the Lambda functions.
-3.  **Secure Authentication:** Leverage Amazon Cognito for user management, including enforcing strong password policies and enabling Multi-Factor Authentication (MFA).
-4.  **Secure Storage:** Keep S3 buckets private by default. Access to documents should only be granted via temporary, secure pre-signed URLs generated by Lambda.
+  * **Issue:** Lambda cold starts slowing down the initial user experience.
+  * **Mitigation:** Use Lambda SnapStart (for Java) or Provisioned Concurrency if necessary (though Node.js cold starts are generally quite fast).
 
-##### Content Piracy
-1.  **Use S3 Pre-Signed URLs:** Never expose direct S3 object links. The backend will generate short-lived, single-use URLs for authenticated users to view/download their purchased content, making links unshareable.
-2.  **Prioritize In-App Viewing:** Design the user experience to encourage reading within the platform's secure document viewer rather than downloading files.
-3.  **Dynamic Watermarking (Future Scope):** As a more advanced measure, dynamically stamp the purchaser's email or a unique transaction ID onto the document pages upon download to discourage sharing.
+## 7\. Expected Outcomes
 
-##### Cost Overruns
-1.  **AWS Budgets & Alerts:** Configure billing alarms in AWS Budgets to send notifications when spending exceeds predefined thresholds (e.g., at 50% and 80% of the $100 budget).
-2.  **Lambda Safeguards:** Set reasonable timeouts and memory limits for all Lambda functions to prevent runaway code from incurring high costs.
-3.  **Caching with CloudFront:** Utilize CloudFront to cache static assets and popular documents at the edge, reducing expensive data transfer out of S3.
-
-##### Service Downtime
-1.  **Leverage Managed Services:** Rely on the high availability of core AWS services (S3, DynamoDB, Lambda), which are inherently resilient and run across multiple Availability Zones (Multi-AZ).
-2.  **Automated CI/CD Pipeline:** Implement a continuous integration/delivery pipeline with automated tests. This catches bugs early and prevents faulty code from reaching production.
-3.  **Canary or Blue/Green Deployments:** Use deployment strategies that route a small percentage of traffic to a new version before a full rollout, allowing for safe, zero-downtime updates.
-
-##### Data Loss
-1.  **S3 Versioning:** Enable versioning on the S3 bucket where documents are stored. This keeps a full history of all objects, protecting against accidental overwrites and deletions.
-2.  **DynamoDB Point-In-Time Recovery (PITR):** Enable PITR on all critical DynamoDB tables. This allows you to restore a table to any single second in the preceding 35 days.
-3.  **Restrictive Deletion Policies:** Use IAM policies and S3 bucket policies to explicitly deny deletion actions for production data, except by a highly privileged administrative role.
-
-##### Performance Degradation
-1.  **Efficient Database Design:** Design DynamoDB tables with appropriate partition keys and indexes (GSIs) to ensure fast, scalable query performance and avoid slow, costly table scans.
-2.  **Performance Monitoring:** Use Amazon CloudWatch to monitor key metrics like API Gateway latency, Lambda duration, and DynamoDB read/write capacity. Set alarms for performance anomalies.
-3.  **Load Testing:** Before launch and after major feature updates, perform load testing to identify performance bottlenecks under simulated user traffic.
-
-#### Contingency Plans (What to do when problems happen)
-
-These are reactive plans detailing the steps to be taken immediately after a risk materializes to minimize damage and restore service.
-
-**If a Security Breach is Detected...**
-1.  **Isolate:** Immediately rotate all exposed credentials (IAM keys, database passwords) and temporarily disable affected user accounts or system components.
-2.  **Investigate:** Analyze CloudTrail, CloudWatch, and API Gateway logs to determine the scope and root cause of the breach.
-3.  **Remediate:** Patch the vulnerability that allowed the breach.
-4.  **Communicate:** Notify affected users and regulatory bodies as required by law, being transparent about the incident and the steps taken.
-
-**If a Cost Spike Occurs...**
-1.  **Analyze:** Use AWS Cost Explorer to immediately identify which service is causing the cost overrun.
-2.  **Mitigate:** If it's a DDoS attack, tighten WAF rules. If it's a bug in a Lambda function, disable the function or roll back the deployment.
-3.  **Rollback:** Use the CI/CD pipeline to redeploy the last known stable version of the application's infrastructure and code.
-
-**If the Service is Down...**
-1.  **Check AWS Health:** First, verify the AWS Service Health Dashboard to rule out a regional AWS issue.
-2.  **Triage:** Examine CloudWatch alarms and logs to pinpoint the failing component (e.g., a specific Lambda function, API Gateway endpoint).
-3.  **Rollback:** If the outage was caused by a recent deployment, trigger an immediate rollback to the previous stable version.
-4.  **Communicate:** Update users via a status page or social media about the outage and provide an estimated time for resolution.
-
-**If Data is Lost/Corrupted...**
-1.  **Halt Writes:** Immediately stop any processes that write to the affected data store to prevent further corruption.
-2.  **Restore:** For documents, use S3 Versioning to restore the deleted object. For user/purchase data, use DynamoDB Point-In-Time Recovery to restore the table to the moment just before the incident.
-3.  **Post-Mortem:** Conduct a thorough investigation to understand the root cause and implement new preventative measures.
-
-### 8. Expected Outcomes
-
-#### Technical Improvements:
-
-*   A fully serverless, scalable platform for selling and reading digital documents with minimal operational overhead.
-*   Secure authentication and a robust system for protecting digital assets.
-*   Improved user engagement through interactive, in-document note-taking and focus tools.
-
-#### Long-term Value:
-
-*   Operates sustainably for well under $50/month, even with thousands of active users.
-*   Supports a high volume of document views and API requests daily.
-*   Ready for future AI-based features like document summarization or personalized content recommendations.
-*   A robust system for linking notes and tasks to specific pages or sections within a document, creating a powerful study tool.   
+  * Ownership of a complete SaaS platform for the recruitment market.
+  * Solving the "Matching" problem between candidates and jobs, rather than being just a pure text editing tool.
+  * Leveraging AWS AI power to create real value (Smart Search) instead of generic "writing assistance" features.  
 
 
 

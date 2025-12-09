@@ -29,4 +29,6 @@ pre: " <b> 1. </b> "
 
 **Week 11:** [Work on final Proposal](1.11-week11/)
 
-**Week 12:** [Complete final Proposal](1.12-week12/)
+**Week 12:** [Work on final Proposal](1.12-week12/)
+
+**Week 13:** [Complete final Proposal](1.13-week13/)

@@ -7,7 +7,7 @@ pre: " <b> 1.12. </b> "
 ---
 
 ### Week 12 Goals:
-* Complete the Project Proposal and the final report.
+* Continue on proposal and the final report.
 
 ### Tasks for this week:
 | Day | Task | Start Date | Completion Date | Resources |
@@ -19,3 +19,8 @@ pre: " <b> 1.12. </b> "
 | Friday | - Work on Final Proposal | 28/11/2025 | 28/11/2025 | |
 
 ### Week 12 Achievements:
+
+#### Challenges:
+* Team members have not completed their assigned tasks.
+    * One member has unclear progress and limited interaction.
+    * One member failed to complete the assigned tasks.

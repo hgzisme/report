@@ -7,9 +7,7 @@ pre: " <b> 1.12 </b> "
 ---
 
 ### Mục tiêu tuần 12:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục làm dự án và báo cáo cuối kì
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
@@ -22,5 +20,8 @@ pre: " <b> 1.12 </b> "
 
 
 ### Kết quả đạt được tuần 12:
-
+#### Khó khăn
+* Thành viên trong nhóm chưa hoàn thành các nhiệm vụ đã giao
+    *   Một người thì tiến độ công việc không rõ ràng, ít tương tác 
+    *   Một người thì không hoàn thành các nhiệm vụ đã giao
 
