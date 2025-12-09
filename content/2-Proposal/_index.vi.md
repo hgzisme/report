@@ -72,24 +72,53 @@ Hệ thống sử dụng kiến trúc Serverless và Event-driven trên AWS.
 
 Mô hình định giá Serverless giúp chi phí tỉ lệ thuận với mức sử dụng. Chi phí AI tập trung vào việc phân tích dữ liệu đầu vào lớn (Input Tokens).
 
-### Giả định
+### Giả định về Chi phí AI (**AI Cost Assumptions**)
 
-*   1 Resume "Match" = 1 lần gọi AI (Phân tích JD + Toàn bộ Sections).
-*   1 lần gọi AI Analysis = ~2.000 input tokens (JD + Sections) + ~500 output tokens (JSON Result).
-*   Giá Bedrock (Claude 3 Sonnet): $3.00/1M input, $15.00/1M output.
-*   Chi phí AI/Lần phân tích: ~ $0.0135 (340 VND).
+Chi phí ước tính cho dịch vụ **Amazon Bedrock** (sử dụng model **Claude 3 Sonnet**) được tính toán dựa trên kịch bản sử dụng thực tế (**MVP**) như sau:
 
-| Dịch vụ             | Mô hình Tính giá | Lưu lượng Thấp (MVP) | Lưu lượng Trung bình |
-| :------------------ | :--------------- | :------------------- | :------------------- |
-| **Quy mô**          |                  | **< 500 Users/tháng** | **~ 5.000 Users/tháng** |
-| Amazon S3           | Lưu trữ          | $0.28                | $0.77                |
-| CloudFront          | CDN              | Free Tier               | Free Tier               |
-| API GW + Lambda     | Compute          | Free Tier            | $2.80                |
-| DynamoDB            | Database         | Free Tier            | $6.25               |
-| Cognito             | Auth             | Free Tier            | Free Tier            |
-| Amazon Bedrock (AI) | Tokens           | ?               | ?             |
-| WAF + Route53       | Security         | $12.60               | $12.60               |
-| **Tổng Chi phí / Tháng** |          | **~ $12.88**       | **~ $13.37**     |
+#### 1. Tần suất & Khối lượng sử dụng
+
+*   Tốc độ xử lý: Hệ thống xử lý trung bình 1 yêu cầu/phút (1 request/minute).
+*   Thời gian hoạt động: Dự kiến hệ thống chịu tải cao hoặc được sử dụng tích cực trong 2 giờ/ngày (120 phút/ngày).
+*   Tổng lưu lượng tháng: 120 yêu cầu/ngày x 30 ngày = 3.600 yêu cầu/tháng.
+
+#### 2. Kích thước Dữ liệu (**Token Size**) cho mỗi yêu cầu
+
+*   Đầu vào (**Input Tokens**): Trung bình 500 tokens/yêu cầu.
+    *   Bao gồm: Dữ liệu trích xuất từ CV hiện tại của người dùng và nội dung Mô tả công việc cần phân tích.
+*   Đầu ra (**Output Tokens**): Trung bình 600 tokens/yêu cầu.
+    *   Bao gồm: Kết quả phân tích, các gợi ý chỉnh sửa và dữ liệu trả về dưới dạng JSON có cấu trúc.
+
+#### 3. Đơn giá (**Pricing** - **Claude 3 Sonnet**)
+
+*   Input: $0.003 / 1.000 tokens (tương đương $3.00 / 1 triệu tokens).
+*   Output: $0.015 / 1.000 tokens (tương đương $15.00 / 1 triệu tokens).
+
+#### Chi tiết Tính toán Chi phí AI (AI Cost Breakdown)
+* Tổng lưu lượng tháng = Tốc độ xử lý * Thời gian hoạt động * 30 ngày
+* Chi phí Input tokens = Tổng lưu lượng * $3 / 1 triệu tokens
+* Chi phí Output tokens = Tổng lưu lượng * $15 / 1 triệu tokens
+* Chi phí Tổng = Chi phí Input tokens + Chi phí Output tokens
+
+##### Lưu lượng Thấp
+*   Tốc độ xử lý: 1 yêu cầu/phút
+*   Thời gian hoạt động: 2 giờ/ngày
+
+##### Lưu lượng Cao
+*   Tốc độ xử lý: 2 yêu cầu/phút
+*   Thời gian hoạt động: 3 giờ/ngày
+
+
+| Dịch vụ | Mô hình Tính phí | Lưu lượng Thấp | Lưu lượng Cao |
+| :--- | :--- | :--- | :--- |
+| Amazon S3 | Lưu trữ | $0.28 | $0.77 |
+| CloudFront | CDN | Free Tier | Free Tier |
+| API GW + Lambda | Tính toán | Free Tier | $2.80 |
+| DynamoDB | Cơ sở dữ liệu | Free Tier | $6.25 |
+| Cognito | Xác thực | Free Tier | Free Tier |
+| Amazon Bedrock (AI) | Tokens | $37.8 | $113.4 |
+| WAF + Route53 | Bảo mật | $12.60 | $12.60 |
+| **Tổng Chi phí / Tháng** | | **\~ $50.68** | **\~ $135.82** |
 
 ## 6. Đánh giá Rủi ro
 
@@ -107,7 +136,7 @@ Mô hình định giá Serverless giúp chi phí tỉ lệ thuận với mức s
     *   Giới hạn độ dài Input của Job Description.
     *   Quota limits (Ví dụ: 10 lần phân tích/ngày cho tài khoản Free).
 
-#### Rủi ro Kiến trúc (Thấp)
+### Rủi ro Kiến trúc (Thấp)
 
 *   **Vấn đề**: Cold start của Lambda làm chậm trải nghiệm người dùng lần đầu.
 *   **Giảm thiểu**: Sử dụng Lambda SnapStart (cho Java) hoặc Provisioned Concurrency nếu cần thiết (tuy nhiên Node.js cold start thường khá nhanh).
@@ -118,6 +147,6 @@ Mô hình định giá Serverless giúp chi phí tỉ lệ thuận với mức s
 *   Giải quyết bài toán "Matching" giữa ứng viên và việc làm thay vì chỉ là công cụ soạn thảo văn bản thuần túy.
 *   Tận dụng sức mạnh AI của AWS để tạo giá trị thực tế (Smart Search) thay vì các tính năng "viết hộ" chung chung.
 
-
+[Tài liệu đính kèm](https://drive.google.com/drive/folders/1zQJ8XC6bdMWveQYIaCO-RkHh9Ppy1WyE?usp=sharing)
 
 

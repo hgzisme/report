@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-Here is the English translation of your project proposal, formatted to match the original structure.
-
 # SnapResume Platform
 
 ## 1\. Project Summary
@@ -74,24 +72,54 @@ The system utilizes Serverless and Event-driven architecture on AWS.
 
 The Serverless pricing model ensures costs are proportional to usage. AI costs are focused on analyzing large input data (Input Tokens).
 
-### Assumptions
+### AI Cost Assumptions
 
-  * 1 Resume "Match" = 1 AI Call (Analyze Job Description + All Sections).
-  * 1 AI Analysis Call = \~2,000 input tokens (JD + Sections) + \~500 output tokens (JSON Result).
-  * Bedrock Pricing (Claude 3 Sonnet): $3.00/1M input, $15.00/1M output.
-  * AI Cost per Analysis: \~ $0.0135.
+The estimated costs for the Amazon Bedrock service (utilizing the Claude 3 Sonnet model) are calculated based on the following *real-world usage scenario* (MVP):
+
+#### 1. Usage Frequency & Volume
+
+1.  **Processing Rate**: The system processes an average of 1 request per minute (1 request/minute).
+2.  **Operating Time**: The system is expected to be under high load or actively used for 2 hours/day (120 minutes/day).
+3.  **Total Monthly Volume**: 120 requests/day × 30 days = 3,600 requests/month.
+
+#### 2. Data Size (Token Size) per Request
+
+1.  **Input (Input Tokens)**: Average of 500 tokens/request.
+    *   Includes: Data extracted from the user's current CV and the content of the Job Description to be analyzed.
+2.  **Output (Output Tokens)**: Average of 600 tokens/request.
+    *   Includes: Analysis results, editing suggestions, and data returned in structured JSON format.
+
+#### 3. Unit Pricing (Pricing - Claude 3 Sonnet)
+
+*   **Input**: $0.003 / 1,000 tokens (equivalent to $3.00 / 1 million tokens).
+*   **Output**: $0.015 / 1,000 tokens (equivalent to $15.00 / 1 million tokens).
+
+#### AI Cost Breakdown
+
+*   Total Monthly Volume = Frequency * Duration * 30 days
+*   Input Token Cost = Total Monthly Volume * Input Tokens per Request * ($3 / 1 million tokens)
+*   Output Token Cost = Total Monthly Volume * Output Tokens per Request * ($15 / 1 million tokens)
+*   Total Cost = Input Token Cost + Output Token Cost
+
+##### Low traffic
+*   Processing Rate: 1 request/minute
+*   Operating Time: 2 hours/day
+
+##### High traffic
+*   Processing Rate: 2 request/minute
+*   Operating Time: 3 hours/day
+
 
 | Service | Pricing Model | Low Traffic (MVP) | Medium Traffic |
 | :--- | :--- | :--- | :--- |
-| **Scale** | | **\< 500 Users/month** | **\~ 5,000 Users/month** |
 | Amazon S3 | Storage | $0.28 | $0.77 |
 | CloudFront | CDN | Free Tier | Free Tier |
 | API GW + Lambda | Compute | Free Tier | $2.80 |
 | DynamoDB | Database | Free Tier | $6.25 |
 | Cognito | Auth | Free Tier | Free Tier |
-| Amazon Bedrock (AI) | Tokens | TBD | TBD |
+| Amazon Bedrock (AI) | Tokens | $37.8 | $113.4 |
 | WAF + Route53 | Security | $12.60 | $12.60 |
-| **Total Cost / Month** | | **\~ $12.88** | **\~ $13.37** |
+| **Total Cost / Month** | | **\~ $50.68** | **\~ $135.82** |
 
 ## 6\. Risk Assessment
 
@@ -119,6 +147,9 @@ The Serverless pricing model ensures costs are proportional to usage. AI costs a
   * Ownership of a complete SaaS platform for the recruitment market.
   * Solving the "Matching" problem between candidates and jobs, rather than being just a pure text editing tool.
   * Leveraging AWS AI power to create real value (Smart Search) instead of generic "writing assistance" features.  
+
+
+[Attached Documents](https://drive.google.com/drive/folders/1zQJ8XC6bdMWveQYIaCO-RkHh9Ppy1WyE?usp=sharing)
 
 
 
