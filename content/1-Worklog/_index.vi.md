@@ -28,4 +28,6 @@ pre: " <b> 1. </b> "
 
 **Tuần 11:** [Làm dự án cuối kì](1.11-week11/)
 
-**Tuần 12:** [Hoàn thành dự án cuối kì](1.12-week12/)
+**Tuần 12:** [Làm dự án cuối kì](1.12-week12/)
+
+**Week 13:** [Hoàn thành dự án cuối kì](1.13-week13/)
