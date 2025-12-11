@@ -1,99 +1,65 @@
 ---
-title : "VPC Endpoint Policies"
+title : "5. Configure Public Object"
 date: 2025-09-09
 weight : 5
 chapter : false
-pre : " <b> 5.5. </b> "
+pre : " <b> 5.5 </b> "
 ---
 
-When you create an interface or gateway endpoint, you can attach an endpoint policy to it that controls access to the service to which you are connecting. A VPC endpoint policy is an IAM resource policy that you attach to an endpoint. If you do not attach a policy when you create an endpoint, AWS attaches a default policy for you that allows full access to the service through the endpoint.
+#### Step-by-Step Configuration
 
-You can create a policy that restricts access to specific S3 buckets only. This is useful if you only want certain S3 Buckets to be accessible through the endpoint.
+1. Access Bucket Permissions
+  - In your S3 bucket interface, select the **Permissions** tab
 
-In this section you will create a VPC endpoint policy that restricts access to the S3 bucket specified in the VPC endpoint policy.
+![Permissions](/images/5-Workshop/5.5-Config-public-object/1.png)
 
-![endpoint diagram](/images/5-Workshop/5.5-Policy/s3-bucket-policy.png)
+2. Find Access Control List Settings
 
-#### Connect to an EC2 instance and verify connectivity to S3
+Scroll down to find the **Access control list (ACL)** section
+  - You will see **Bucket owner enforced** is currently selected
+  - This means ACLs are disabled and the bucket owner controls all objects
 
-1. Start a new AWS Session Manager session on the instance named Test-Gateway-Endpoint. From the session, verify that you can list the contents of the bucket you created in Part 1: Access S3 from VPC:
+![Access control list](/images/5-Workshop/5.5-Config-public-object/2.png)
 
-```
-aws s3 ls s3://\<your-bucket-name\>
-```
-![test](/images/5-Workshop/5.5-Policy/test1.png)
+3. Enable ACL for Object Level Control
+  - Select **Edit** in the Object Ownership section, then configure:
+    - Object ownership: Select **ACLS enabled**
+    - Acknowledgment: Check **I acknowledge that ACLs will be restored**
+    - **Object ownership setting**: Select **Bucket owner preferred**
+    - Select **Save changes**
 
-The bucket contents include the two 1 GB files uploaded in earlier.
+![Object ownership](/images/5-Workshop/5.5-Config-public-object/3.png)
 
-2. Create a new S3 bucket; follow the naming pattern you used in Part 1, but add a '-2' to the name. Leave other fields as default and click create
+4. Verify ACL Configuration
 
-![create bucket](/images/5-Workshop/5.5-Policy/create-bucket.png)
+After saving, you will see ACLs enabled in the Object Ownership section.
+- Updated Configuration: Your bucket now supports ACLs, allowing you to set object-level permissions including public access.
 
-Successfully create bucket
+![Object ownership](/images/5-Workshop/5.5-Config-public-object/4.png)
 
-![Success](/images/5-Workshop/5.5-Policy/create-bucket-success.png)
+5. Make Objects Public Using ACL
 
-3. Navigate to: Services > VPC > Endpoints, then select the Gateway VPC endpoint you created earlier. Click the Policy tab. Click Edit policy.
+Navigate back to the Objects tab of the bucket:
+  - Select the objects or folders you want to make public
+  - Select Actions from the toolbar
+  - Select Make public using ACL
 
-![policy](/images/5-Workshop/5.5-Policy/policy1.png)
+![Object ownership](/images/5-Workshop/5.5-Config-public-object/5.png)
 
-The default policy allows access to all S3 Buckets through the VPC endpoint.
+6.  Confirm Public Access
 
-4. In Edit Policy console, copy & Paste the following policy, then replace yourbucketname-2 with your 2nd bucket name. This policy will allow access through the VPC endpoint to your new bucket, but not any other bucket in Amazon S3. Click Save to apply the policy.
+On the Make public confirmation page:
 
-```
-{
-  "Id": "Policy1631305502445",
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "Stmt1631305501021",
-      "Action": "s3:*",
-      "Effect": "Allow",
-      "Resource": [
-      				"arn:aws:s3:::yourbucketname-2",
-       				"arn:aws:s3:::yourbucketname-2/*"
-       ],
-      "Principal": "*"
-    }
-  ]
-}
-```
+  - Review the objects that will be made public
+  - Understand that these objects will be accessible by anyone
+  - Select Make public to confirm
 
-![custom policy](/images/5-Workshop/5.5-Policy/policy2.png)
+**Final Warning**: When you click “Make public”, these objects will immediately be accessible by anyone on the internet who knows the URL.
 
-Successfully customize policy
+![Object ownership](/images/5-Workshop/5.5-Config-public-object/6.png)
 
-![success](/static/images/5-Workshop/5.5-Policy/success.png)
+7. Verify Public Configuration
 
-5. From your session on the Test-Gateway-Endpoint instance, test access to the S3 bucket you created in Part 1: Access S3 from VPC
-```
-aws s3 ls s3://<yourbucketname>
-```
+Success! Your objects are now publicly accessible.
 
-This command will return an error because access to this bucket is not permitted by your new VPC endpoint policy:
-
-![error](/static/images/5-Workshop/5.5-Policy/error.png)
-
-6. Return to your home directory on your EC2 instance ` cd~ `
-
-+ Create a file ```fallocate -l 1G test-bucket2.xyz ```
-+ Copy file to 2nd bucket ```aws s3 cp test-bucket2.xyz s3://<your-2nd-bucket-name>```
-
-![success](/static/images/5-Workshop/5.5-Policy/test2.png)
-
-This operation succeeds because it is permitted by the VPC endpoint policy.
-
-![success](/static/images/5-Workshop/5.5-Policy/test2-success.png)
-
-+ Then we test access to the first bucket by copy the file to 1st bucket `aws s3 cp test-bucket2.xyz s3://<your-1st-bucket-name>`
-
-![fail](/static/images/5-Workshop/5.5-Policy/test2-fail.png)
-
-This command will return an error because access to this bucket is not permitted by your new VPC endpoint policy.
-
-#### Part 3 Summary:
-
-In this section, you created a VPC endpoint policy for Amazon S3, and used the AWS CLI to test the policy. AWS CLI actions targeted to your original S3 bucket failed because you applied a policy that only allowed access to the second bucket you created. AWS CLI actions targeted for your second bucket succeeded because the policy allowed them. These policies can be useful in situations where you need to control access to resources through VPC endpoints.
-
-
+![Object ownership](/images/5-Workshop/5.5-Config-public-object/7.png)

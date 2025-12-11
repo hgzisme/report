@@ -26,17 +26,17 @@ S3 bucket là một container chứa các đối tượng được lưu trữ tr
     - **AWS Region**: Chọn vùng gần nhất với người dùng của bạn hoặc theo yêu cầu
     - **Object Ownership**: Chọn **ACLs disabled (recommended)**
 
-![Create S3 Bucket](/static/images/5-Workshop/5.2-Prerequiste/5.2.1-Create-S3-bucket/1.png)
-![Create S3 Bucket](/static/images/5-Workshop/5.2-Prerequiste/5.2.1-Create-S3-bucket/2.png)
-![Create S3 Bucket](/static/images/5-Workshop/5.2-Prerequiste/5.2.1-Create-S3-bucket/3.png)
-![Create S3 Bucket](/static/images/5-Workshop/5.2-Prerequiste/5.2.1-Create-S3-bucket/4.png)
-![Create S3 Bucket](/static/images/5-Workshop/5.2-Prerequiste/5.2.1-Create-S3-bucket/5.png)
+![Create S3 Bucket](/images/5-Workshop/5.2-Prerequisite/5.2.1-Create-S3-bucket/1.png)
+![Create S3 Bucket](/images/5-Workshop/5.2-Prerequisite/5.2.1-Create-S3-bucket/2.png)
+![Create S3 Bucket](/images/5-Workshop/5.2-Prerequisite/5.2.1-Create-S3-bucket/3.png)
+![Create S3 Bucket](/images/5-Workshop/5.2-Prerequisite/5.2.1-Create-S3-bucket/4.png)
+![Create S3 Bucket](/images/5-Workshop/5.2-Prerequisite/5.2.1-Create-S3-bucket/5.png)
 
 4. Xác minh Tạo Bucket
 
 Thành công! Bạn đã tạo S3 bucket để lưu trữ mã nguồn website. Bucket sẽ được hiển thị ở **General purpose buckets**
 
-![Create S3 Bucket](/static/images/5-Workshop/5.2-Prerequiste/5.2.1-Create-S3-bucket/6.png)
+![Create S3 Bucket](/images/5-Workshop/5.2-Prerequisite/5.2.1-Create-S3-bucket/6.png)
 
 #### Những gì đã thực hiện được
 1.  Tạo S3 bucket duy nhất trên toàn cầu

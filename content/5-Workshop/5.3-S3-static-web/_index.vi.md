@@ -1,7 +1,7 @@
 ---
-title : "Bật tính năng Host Static Website từ S3 bucket"
+title : "3. Bật tính năng Host Static Website từ S3 bucket"
 date: 2025-09-09
-weight : 1
+weight : 3
 chapter : false
 pre : " <b> 5.3. </b> "
 ---
@@ -12,14 +12,14 @@ Trong phần này, bạn sẽ mở tính năng host website tĩnh từ S3 bucket
 1. Truy cập Properties của Bucket
     - Trong giao diện S3 bucket của bạn, chọn tab Properties
 
-![Properties](/static/images/5-Workshop/5.3-S3-static-web/1.png)
+![Properties](/images/5-Workshop/5.3-S3-static-web/1.png)
 
 2. Tìm **Static Website Hosting**
 
 Trong giao diện Properties:
 - Cuộn xuống để tìm phần **Static website hosting**
 - Chọn **Edit** để sửa đổi cài đặt
-![Static Website Hosting](/static/images/5-Workshop/5.3-S3-static-web/2.png)
+![Static Website Hosting](/images/5-Workshop/5.3-S3-static-web/2.png)
 
 3. Cấu hình cài đặt Website Hosting
 
@@ -28,11 +28,11 @@ Trong giao diện Properties:
     - **Index document**: Nhập `index.html`
     - **Error document** (tùy chọn): Nhập `error.html` nếu bạn có trang lỗi tùy chỉnh
 
-![Static Website Hosting](/static/images/5-Workshop/5.3-S3-static-web/3.png)
+![Static Website Hosting](/images/5-Workshop/5.3-S3-static-web/3.png)
 
 
 4. Lưu cấu hình
-![Static Website Hosting](/static/images/5-Workshop/5.3-S3-static-web/4.png)
+![Static Website Hosting](/images/5-Workshop/5.3-S3-static-web/4.png)
 
 ### Lưu ý:
 
