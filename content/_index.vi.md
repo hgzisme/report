@@ -18,7 +18,7 @@ chapter: false
 
 &emsp; **Ngành:** Kĩ sư phần mềm
 
-&emsp; **Lớp:** AWS082025
+&emsp; **Lớp:** AWS092025
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 
